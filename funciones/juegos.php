@@ -12,7 +12,9 @@ function getJuegos()
             "etiqueta2" => "Accion",
             "descripcion" => "La tan esperada tercera entrega del clasico de Valve resulto ser en realidad un placeholder de un trabajo practico.",
             "precio" => 500,
-            "calificacion" => 10
+            "calificacion" => 10,
+            "desarrollador" => "X Software",
+            "lanzamiento" => "12/12/2020"
         ),
         array(
             'serial' => '10002',
@@ -22,7 +24,9 @@ function getJuegos()
             "etiqueta2" => "Estrategia",
             "descripcion" => "A re que es gratis. El MOBA mas jugado del mundo ahora es pago, unite a esta aventura.",
             "precio" => 1000,
-            "calificacion" => 8.5
+            "calificacion" => 8.5,
+            "desarrollador" => "X Software",
+            "lanzamiento" => "12/12/2020"
         ),
         array(
             'serial' => '10003',
@@ -32,7 +36,9 @@ function getJuegos()
             "etiqueta2" => "Multijugador",
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
-            "calificacion" => 7.8
+            "calificacion" => 7.8,
+            "desarrollador" => "X Software",
+            "lanzamiento" => "12/12/2020"
         ),
         array(
             'serial' => '10004',
@@ -42,7 +48,9 @@ function getJuegos()
             "etiqueta2" => "Terror Psicologico",
             "descripcion" => "La tan esperada tercera entrega del clasico de Valve resulto ser en realidad un placeholder de un trabajo practico.",
             "precio" => 500,
-            "calificacion" => 10
+            "calificacion" => 10,
+            "desarrollador" => "X Software",
+            "lanzamiento" => "12/12/2020"
         ),
         array(
             'serial' => '10005',
@@ -52,7 +60,9 @@ function getJuegos()
             "etiqueta2" => "Accion",
             "descripcion" => "A re que es gratis. El MOBA mas jugado del mundo ahora es pago, unite a esta aventura.",
             "precio" => 1000,
-            "calificacion" => 8.5
+            "calificacion" => 8.5,
+            "desarrollador" => "X Software",
+            "lanzamiento" => "12/12/2020"
         ),
         array(
             'serial' => '10006',
@@ -62,7 +72,9 @@ function getJuegos()
             "etiqueta2" => "Accion",
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
-            "calificacion" => 7.8
+            "calificacion" => 7.8,
+            "desarrollador" => "X Software",
+            "lanzamiento" => "12/12/2020"
         ),
         array(
             'serial' => '10007',
@@ -72,7 +84,9 @@ function getJuegos()
             "etiqueta2" => "Estrategia",
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
-            "calificacion" => 7.8
+            "calificacion" => 7.8,
+            "desarrollador" => "X Software",
+            "lanzamiento" => "12/12/2020"
         )
     );
 
@@ -93,22 +107,22 @@ function getAleatorios($cantidad){
     
 }
 
-function getEmpleadoByLegajo($legajo)
+function getJuegoBySerial($serial)
 {
 
-    $empleado = null;
+    $juego = null;
     $contador = 0;
-    $empleados = getEmpleados();
+    $juegos = getJuegos();
 
-    while( $contador < count($empleados) and is_null($empleado) )
+    while( $contador < count($juegos) and is_null($juego) )
     {
-        if( $empleados[$contador]['legajo'] == $legajo )
+        if( $juegos[$contador]['serial'] == $serial )
         {
-            $empleado = $empleados[$contador];
+            $juego = $juegos[$contador];
         }
         $contador++;
     }
 
-    return $empleado;
+    return $juego;
 
 }

@@ -42,7 +42,7 @@
                                 <div class="label"><?php echo $item["etiqueta2"] ?></div>
                                 <h2><?php echo $item["nombre"] ?></h2>
                                 <p><?php echo $item["descripcion"] ?></p>
-                                <a href="#"><span>Ver Mas</span> <i class="fa fa-angle-right"></i></a>
+                                <a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><span>Ver Mas</span> <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
     </section>
     <!-- Hero Section End -->
 
-    <!-- Product Section Begin -->
+    <!-- Seccion de Productos -->
     <section class="product spad">
         <div class="container">
             <div class="row">
@@ -143,7 +143,7 @@
             </div>
         </div>                        
     </section>
-<!-- Product Section End -->
+<!-- Termina la seccion de productos -->
 
 <!-- Importa el Footer -->
 <?php
