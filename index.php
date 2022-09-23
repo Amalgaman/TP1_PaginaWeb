@@ -78,7 +78,7 @@
                                     <div class="product__item__pic set-bg" data-setbg="<?php echo $item["portada"] ?>">
                                         <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> $ <?php echo $item["precio"] ?></div>
+                                        <div class="view">$ <?php echo $item["precio"] ?></div>
                                     </div>
                                     <div class="product__item__text">
                                         <ul>
@@ -112,7 +112,7 @@
                                     <div class="product__item__pic set-bg" data-setbg="<?php echo $item["portada"] ?>">
                                         <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> $ <?php echo $item["precio"] ?></div>
+                                        <div class="view"> $ <?php echo $item["precio"] ?></div>
                                     </div>
                                     <div class="product__item__text">
                                         <ul>
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                 </div>    
-                <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="col-md-4 col-sm-8">
                     <div class="section-title">
                         <h5>Novedades</h5>
                     </div>
@@ -135,7 +135,7 @@
                         <div class="product__sidebar__view__item set-bg"
                             data-setbg="<?php echo $item["portada"] ?>">
                             <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
-                            <div class="view"><i class="fa fa-eye"></i> $ <?php echo $item["precio"] ?></div>
+                            <div class="view"> $ <?php echo $item["precio"] ?></div>
                             <h5><a href="#"><?php echo $item["nombre"] ?></a></h5>
                         </div>
                     <?php endforeach ?>         
