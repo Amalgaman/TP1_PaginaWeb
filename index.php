@@ -137,6 +137,8 @@
                             <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
                             <div class="view"> $ <?php echo $item["precio"] ?></div>
                             <h5><a href="#"><?php echo $item["nombre"] ?></a></h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y99k_XcAreA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/2hwGZnjKlTk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     <?php endforeach ?>         
                 </div>           

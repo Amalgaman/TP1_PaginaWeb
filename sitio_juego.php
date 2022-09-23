@@ -4,8 +4,9 @@
  <!-- Importa las funciones -->
  <?php
     require_once('funciones/juegos.php');
-    $serial = $_GET["serial"];
-    $juego = getJuegoBySerial($serial);
+    //$serial = $_GET["serial"];
+    //$juego = getJuegoBySerial($serial);
+    $juego = getJuegoBySerial(10001);
     ?>
 
 <head> 
@@ -57,7 +58,11 @@
                             <p><?php echo $juego["descripcion"] ?></p>
                             <div class="anime__details__widget">
                                 <div class="row">
+
                                     <div class="col-lg-6 col-md-6">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        
+                                     
                                         <ul>
                                             <li><span>Calificacion:</span> <?php echo $juego["calificacion"] ?>/10</li>
                                             <li><span>Desarrollador:</span> <?php echo $juego["desarrollador"] ?></li>
