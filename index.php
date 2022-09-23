@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>Holawas</title>
+    <title>Holiwis</title>
     <?php
     require "componentes/_head.php";
     ?>
