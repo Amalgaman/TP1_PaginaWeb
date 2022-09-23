@@ -4,8 +4,9 @@
  <!-- Importa las funciones -->
  <?php
     require_once('funciones/juegos.php');
-    $serial = $_GET["serial"];
-    $juego = getJuegoBySerial($serial);
+    //$serial = $_GET["serial"];
+    //$juego = getJuegoBySerial($serial);
+    $juego = getJuegoBySerial(10001);
     ?>
 
 <head> 
@@ -57,7 +58,9 @@
                             <p><?php echo $juego["descripcion"] ?></p>
                             <div class="anime__details__widget">
                                 <div class="row">
+
                                     <div class="col-lg-6 col-md-6">
+                                    
                                         <ul>
                                             <li><span>Calificacion:</span> <?php echo $juego["calificacion"] ?>/10</li>
                                             <li><span>Desarrollador:</span> <?php echo $juego["desarrollador"] ?></li>
@@ -65,17 +68,11 @@
                                             <li><span>Generos:</span> <?php echo $juego["etiqueta1"] ?>, <?php echo $juego["etiqueta2"] ?></li>
                                         </ul>
                                     </div>
-                                    <!--  Por si queremos agregar mas datos
+                                    
                                         <div class="col-lg-6 col-md-6">
-                                        <ul>
-                                            <li><span>Scores:</span> 7.31 / 1,515</li>
-                                            <li><span>Rating:</span> 8.5 / 161 times</li>
-                                            <li><span>Duration:</span> 24 min/ep</li>
-                                            <li><span>Quality:</span> HD</li>
-                                            <li><span>Views:</span> 131,541</li>
-                                        </ul>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
-                                    -->  
+                                    
                                 </div>
                             </div>
                             <div class="anime__details__btn">
