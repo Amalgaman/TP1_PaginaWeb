@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-
+ <!-- Importa las funciones -->
+    <?php
+    require_once('funciones/juegos.php');
+    $lista = getJuegos();
+    $portada = getAleatorios(5);
+    $recomendados = getAleatorios(3);
+    $populares = getAleatorios(6);
+    $novedades = getAleatorios(6);
+    ?>
 <head>
     <title>Holiwis</title>
     <?php
@@ -14,15 +22,7 @@
         <div class="loader"></div>
     </div>
 
-     <!-- Importa las funciones -->
-    <?php
-    require_once('funciones/juegos.php');
-    $lista = getJuegos();
-    $portada = getAleatorios(5);
-    $recomendados = getAleatorios(3);
-    $populares = getAleatorios(6);
-    $novedades = getAleatorios(6);
-    ?>
+    
 
     <!-- Importa el Header -->
     <?php

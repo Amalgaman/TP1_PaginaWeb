@@ -4,9 +4,10 @@
  <!-- Importa las funciones -->
  <?php
     require_once('funciones/juegos.php');
-    //$serial = $_GET["serial"];
-    //$juego = getJuegoBySerial($serial); 
-    $juego = getJuegoBySerial(10001);
+    $serial = $_GET["serial"];
+    $juego = getJuegoBySerial($serial);
+    $recomendados = getAleatorios(4); 
+ 
     ?>
 
 <head> 
@@ -31,6 +32,11 @@
     <!-- Anime Section Begin -->
     <section class="anime-details spad">
         <div class="container">
+            <div class="row">
+                <div class="col mb-5">
+                <iframe class="w-100"width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
             <div class="anime__details__content">
                 <div class="row">
                     <div class="col-lg-3">
@@ -68,10 +74,11 @@
                                         </ul>
                                     </div>
                                     
-                                        <div class="col-lg-6 col-md-6">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    
+                                      <!--   <div class="col-lg-6 col-md-6">
+                                       <iframe class="img-fluid" width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <iframe class="w-auto h-auto "width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    --> 
                                 </div>
                             </div>
                             <div class="anime__details__btn">

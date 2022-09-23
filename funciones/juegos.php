@@ -27,7 +27,8 @@ function getJuegos()
             "precio" => 1000,
             "calificacion" => 8.5,
             "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2020"
+            "lanzamiento" => "12/12/2020",
+            "trailer" => "vtFhDrMIZjE"
         ),
         array(
             'serial' => '10003',
