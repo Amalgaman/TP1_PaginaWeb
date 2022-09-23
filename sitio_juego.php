@@ -5,7 +5,7 @@
  <?php
     require_once('funciones/juegos.php');
     //$serial = $_GET["serial"];
-    //$juego = getJuegoBySerial($serial);
+    //$juego = getJuegoBySerial($serial); 
     $juego = getJuegoBySerial(10001);
     ?>
 
@@ -43,7 +43,6 @@
                         <div class="anime__details__text">
                             <div class="anime__details__title">
                                 <h3><?php echo $juego["nombre"] ?></h3>
-                                <span>フェイト／ステイナイト, Feito／sutei naito</span>
                             </div>
                             <div class="anime__details__rating">
                                 <div class="rating">
