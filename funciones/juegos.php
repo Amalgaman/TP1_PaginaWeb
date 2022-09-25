@@ -133,7 +133,7 @@ function getJuegos()
         ), array(
             'serial' => '10011',
             'portada' => 'img/ejemplo6.jpeg',
-            'nombre' => 'Half-Life: Alyx',
+            'nombre' => 'ARK: Survival Evolved',
             "etiqueta1" => "Carreras",
             "etiqueta2" => "Accion",
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
@@ -141,8 +141,79 @@ function getJuegos()
             "calificacion" => 7.8,
             "desarrollador" => "X Software",
             "lanzamiento" => "12/12/2020",
-            "trailer" => "O2W0N3uKXmo"
-        )
+            "trailer" => "FW9vsrPWujI"
+        ), array(
+            'serial' => '10012',
+            'portada' => 'img/ejemplo6.jpeg',
+            'nombre' => 'Payday 2 ',
+            "etiqueta1" => "Carreras",
+            "etiqueta2" => "Accion",
+            "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
+            "precio" => 300,
+            "calificacion" => 7.8,
+            "desarrollador" => "X Software",
+            "lanzamiento" => "12/12/2020",
+            "trailer" => "Gb-_DKC6wc4", 
+          )  array(
+                'serial' => '10013',
+                'portada' => 'img/ejemplo6.jpeg',
+                'nombre' => 'Hollow Knight ',
+                "etiqueta1" => "Carreras",
+                "etiqueta2" => "Accion",
+                "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
+                "precio" => 300,
+                "calificacion" => 7.8,
+                "desarrollador" => "X Software",
+                "lanzamiento" => "12/12/2020",
+                "trailer" => "UAO2urG23S4"
+              )  , array(
+                    'serial' => '10014',
+                    'portada' => 'img/ejemplo6.jpeg',
+                    'nombre' => 'Call of Duty: Modern Warfare II',
+                    "etiqueta1" => "Carreras",
+                    "etiqueta2" => "Accion",
+                    "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
+                    "precio" => 300,
+                    "calificacion" => 7.8,
+                    "desarrollador" => "X Software",
+                    "lanzamiento" => "12/12/2020",
+                    "trailer" => "r72GP1PIZa0" 
+                    )  array(
+                        'serial' => '10015',
+                        'portada' => 'img/ejemplo6.jpeg',
+                        'nombre' => 'Goat Simulator',
+                        "etiqueta1" => "Carreras",
+                        "etiqueta2" => "Accion",
+                        "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
+                        "precio" => 300,
+                        "calificacion" => 7.8,
+                        "desarrollador" => "X Software",
+                        "lanzamiento" => "12/12/2020",
+                        "trailer" => "dvWGLcdI8o8"
+                        )  array(
+                            'serial' => '10016',
+                            'portada' => 'img/ejemplo6.jpeg',
+                            'nombre' => 'The Sims 4',
+                            "etiqueta1" => "Carreras",
+                            "etiqueta2" => "Accion",
+                            "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
+                            "precio" => 300,
+                            "calificacion" => 7.8,
+                            "desarrollador" => "X Software",
+                            "lanzamiento" => "12/12/2020",
+                            "trailer" => "z00mK3Pxc8w"
+                            )  array(
+                                'serial' => '10017',
+                                'portada' => 'img/ejemplo6.jpeg',
+                                'nombre' => 'Terraria',
+                                "etiqueta1" => "Carreras",
+                                "etiqueta2" => "Accion",
+                                "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
+                                "precio" => 300,
+                                "calificacion" => 7.8,
+                                "desarrollador" => "X Software",
+                                "lanzamiento" => "12/12/2020",
+                                "trailer" => "w7uOhFTrrq0"
     );
 
     return $lista;
