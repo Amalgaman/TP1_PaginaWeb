@@ -1,6 +1,5 @@
 <?php
-shuffle($lista);
-$random = $lista[1];
+$random = rand(10001, 10017);
 ?>
 <header class="header">
         <div class="container">
@@ -27,7 +26,7 @@ $random = $lista[1];
                                         <li><a href="./login.html">Login</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./sitio_juego.php?serial=<?php echo $random["serial"] ?>">Juego Aleatorio</a></li>
+                                <li><a href="./sitio_juego.php?serial=<?php echo $random ?>">Juego Aleatorio</a></li>
                                 <li><a href="#">Contacts</a></li>
                             </ul>
                         </nav>

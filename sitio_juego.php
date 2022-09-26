@@ -7,7 +7,6 @@
     $serial = $_GET["serial"];
     $juego = getJuegoBySerial($serial);
     $recomendados = getAleatorios(4); 
- 
     ?>
 
 <head> 
