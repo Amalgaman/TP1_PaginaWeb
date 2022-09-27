@@ -1,7 +1,9 @@
 <?php
+require_once ("./funciones/juegos.php");
+
 $etiquetas = getEtiquetas();
 
-$random = rand(10001, 10017);
+$random = rand(10001, (10000 + count(getJuegos())));
 ?>
 <header class="header">
         <div class="container">
@@ -17,7 +19,7 @@ $random = rand(10001, 10017);
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li class="active"><a href="./index.html">Inicio</a></li>
+                                <li class="active"><a href="./index.php">Inicio</a></li>
                                 <li><a href="./lista.php">Lista de Juegos<span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
                                         <?php foreach($etiquetas as $item):?>

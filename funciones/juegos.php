@@ -8,7 +8,7 @@ function getJuegos()
             'serial' => '10001',
             'portada' => 'img/ejemplo1.jpg',
             'nombre' => 'Grand Theft Auto V',
-            "etiquetas" => array("Shooter","Accion"),
+            "etiquetas" => array("Shooter","Accion","Multijugador"),
             "descripcion" => "La tan esperada tercera entrega del clasico de Valve resulto ser en realidad un placeholder de un trabajo practico.",
             "precio" => 500,
             "calificacion" => 10,
@@ -279,4 +279,34 @@ function getJuegoByEtiqueta($etiqueta)
 
     return $juegos_filtrados;
 
+}
+function getJuegosSimilares($etiquetas,$juego_sitio){
+    
+    $lista_similares = array();
+
+    foreach($etiquetas as $etiqueta){
+        
+        $juegos = getJuegoByEtiqueta($etiqueta);
+        
+        foreach($juegos as $juego){
+            
+            if( in_array($etiqueta, $juego['etiquetas']) and !in_array($lista_similares, $juego) and $juego != $juego_sitio){
+                
+                array_push($lista_similares, $juego);
+
+            }
+        }  
+    }
+
+    shuffle($lista_similares); 
+
+    if(count($lista_similares) >= 3){   
+        $recorte = array();
+        for($i = 0; $i < 3 ; $i++){
+            array_push($recorte, $lista_similares[$i]);
+        }
+    $lista_similares = $recorte;    
+    }
+
+    return $lista_similares;
 }

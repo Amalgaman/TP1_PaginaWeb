@@ -6,8 +6,9 @@
     require_once('funciones/juegos.php');
     $serial = $_GET["serial"];
     $juego = getJuegoBySerial($serial);
-    $recomendados = getJuegoByEtiqueta($juego["etiquetas"]);
-    shuffle($recomendados);
+    
+    $similares = getJuegosSimilares($juego["etiquetas"],$juego);
+      
     ?>
 
 <head> 
@@ -41,8 +42,6 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="anime__details__pic set-bg" data-setbg="<?php echo $juego["portada"] ?>">
-                            <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                            <div class="view"><i class="fa fa-eye"></i> 9141</div>
                         </div>
                     </div>
                     <div class="col-lg-9">
@@ -85,7 +84,7 @@
                             </div>
                             <div class="anime__details__btn">
                                 <a href="#" class="follow-btn">$ <?php echo $juego["precio"] ?></a>
-                                <a href="#" class="watch-btn"><span>Comprar</span> <i
+                                <a href="./formulario.php" class="watch-btn"><span>Comprar</span> <i
                                     class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
@@ -101,25 +100,24 @@
                             </div>
                         </div>
                         <div class="row">
-                            <?php for($i = 0; $i < 3 ; $i++): ?>
+                            <?php foreach($similares as $item): ?>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="<?php echo $recomendados[$i]["portada"] ?>">
-                                        <div class="ep"><?php echo $recomendados[$i]["calificacion"] ?> / 10</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view">$ <?php echo $recomendados[$i]["precio"] ?></div>
+                                    <div class="product__item__pic set-bg" data-setbg="<?php echo $item["portada"] ?>">
+                                        <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
+                                        <div class="view">$ <?php echo $item["precio"] ?></div>
                                     </div>
                                     <div class="product__item__text">
                                         <ul>
-                                        <?php foreach($recomendados[$i]["etiquetas"] as $etiqueta):?>
+                                        <?php foreach($item["etiquetas"] as $etiqueta):?>
                                                 <li><?php echo $etiqueta ?></li>
                                             <?php endforeach;?>  
                                         </ul>
-                                        <h5><a href="#"><?php echo $recomendados[$i]["nombre"] ?></a></h5>
+                                        <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></a></h5>
                                     </div>
                                 </div>
                             </div>
-                            <?php endfor ?>    
+                            <?php endforeach?>    
                         </div>
                     </div>
             </div>

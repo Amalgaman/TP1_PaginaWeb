@@ -4,10 +4,14 @@
      <?php
     require_once('funciones/juegos.php');
     $lista = getJuegos();
+    $etiqueta = $_GET['etiqueta'] ?? null;
+    if($etiqueta != null){
+        $lista = getJuegoByEtiqueta($etiqueta);
+    }
     ?>
 
 <head>
-    <title>Anime | Template</title>
+    <title>Lista de Juegos</title>
     <?php
     require "componentes/_head.php";
     ?>
@@ -34,18 +38,19 @@
                             <div class="row">
                                 <div class="col-lg-8 col-md-8 col-sm-6">
                                     <div class="section-title">
-                                        <h4>Romance</h4>
+                                        <h4>Lista de juegos</h4>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="product__page__filter">
-                                        <p>Filtrar:</p>
-                                        <select>
-                                            <option value="">A-Z</option>
-                                            <option value="">1-10</option>
-                                            <option value="">10-50</option>
+                                    <form class="product__page__filter" action="lista.php" method="get">
+                                        <button type="submit">Filtrar:</button>
+                                        <select name="etiqueta" id="etiqueta">
+                                            <option value="">Todos</option>
+                                            <?php foreach($etiquetas as $op): ?>
+                                                <option <?php if($op == $etiqueta): ?> selected <?php endif ?> value="<?php echo $op ?>"><?php echo $op ?></option>
+                                            <?php endforeach?>        
                                         </select>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -79,59 +84,16 @@
 
 <!-- Product Section End -->
 
-<!-- Footer Section Begin -->
-<footer class="footer">
-    <div class="page-up">
-        <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="footer__logo">
-                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="footer__nav">
-                    <ul>
-                        <li class="active"><a href="./index.html">Homepage</a></li>
-                        <li><a href="./categories.html">Categories</a></li>
-                        <li><a href="./blog.html">Our Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+<!-- Importa el Footer -->
+<?php
+require "componentes/_footer.php";
+?>
 
-              </div>
-          </div>
-      </div>
-  </footer>
-  <!-- Footer Section End -->
 
-  <!-- Search model Begin -->
-  <div class="search-model">
-    <div class="h-100 d-flex align-items-center justify-content-center">
-        <div class="search-close-switch"><i class="icon_close"></i></div>
-        <form class="search-model-form">
-            <input type="text" id="search-input" placeholder="Search here.....">
-        </form>
-    </div>
-</div>
-<!-- Search model end -->
-
-<!-- Js Plugins -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/player.js"></script>
-<script src="js/jquery.nice-select.min.js"></script>
-<script src="js/mixitup.min.js"></script>
-<script src="js/jquery.slicknav.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
+<!-- Importa Js Plugins -->
+<?php
+require "componentes/_scripts.php";
+?>
 
 </body>
 
