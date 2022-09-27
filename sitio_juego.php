@@ -6,7 +6,8 @@
     require_once('funciones/juegos.php');
     $serial = $_GET["serial"];
     $juego = getJuegoBySerial($serial);
-    $recomendados = getAleatorios(4); 
+    $recomendados = getJuegoByEtiqueta($juego["etiquetas"]);
+    shuffle($recomendados);
     ?>
 
 <head> 
@@ -69,7 +70,9 @@
                                             <li><span>Calificacion:</span> <?php echo $juego["calificacion"] ?>/10</li>
                                             <li><span>Desarrollador:</span> <?php echo $juego["desarrollador"] ?></li>
                                             <li><span>Lanzamiento:</span> <?php echo $juego["lanzamiento"] ?></li>
-                                            <li><span>Generos:</span> <?php echo $juego["etiqueta1"] ?>, <?php echo $juego["etiqueta2"] ?></li>
+                                            <li><span>Generos:</span> <?php foreach($juego["etiquetas"] as $etiqueta):
+                                                 echo "{$etiqueta} , "; 
+                                                 endforeach?> </li>
                                         </ul>
                                     </div>
                                     
@@ -81,7 +84,7 @@
                                 </div>
                             </div>
                             <div class="anime__details__btn">
-                                <a href="#" class="follow-btn"><i class="fa fa-heart-o"></i>$ <?php echo $juego["precio"] ?></a>
+                                <a href="#" class="follow-btn">$ <?php echo $juego["precio"] ?></a>
                                 <a href="#" class="watch-btn"><span>Comprar</span> <i
                                     class="fa fa-angle-right"></i></a>
                                 </div>
@@ -98,24 +101,25 @@
                             </div>
                         </div>
                         <div class="row">
-                            <?php foreach($recomendados as $item): ?>
+                            <?php for($i = 0; $i < 3 ; $i++): ?>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="<?php echo $item["portada"] ?>">
-                                        <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
+                                    <div class="product__item__pic set-bg" data-setbg="<?php echo $recomendados[$i]["portada"] ?>">
+                                        <div class="ep"><?php echo $recomendados[$i]["calificacion"] ?> / 10</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> $ <?php echo $item["precio"] ?></div>
+                                        <div class="view">$ <?php echo $recomendados[$i]["precio"] ?></div>
                                     </div>
                                     <div class="product__item__text">
                                         <ul>
-                                            <li><?php echo $item["etiqueta1"] ?></li>
-                                            <li><?php echo $item["etiqueta2"] ?></li>
+                                        <?php foreach($recomendados[$i]["etiquetas"] as $etiqueta):?>
+                                                <li><?php echo $etiqueta ?></li>
+                                            <?php endforeach;?>  
                                         </ul>
-                                        <h5><a href="#"><?php echo $item["nombre"] ?></a></h5>
+                                        <h5><a href="#"><?php echo $recomendados[$i]["nombre"] ?></a></h5>
                                     </div>
                                 </div>
                             </div>
-                            <?php endforeach ?>    
+                            <?php endfor ?>    
                         </div>
                     </div>
             </div>

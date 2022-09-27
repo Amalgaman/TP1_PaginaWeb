@@ -1,4 +1,6 @@
 <?php
+$etiquetas = getEtiquetas();
+
 $random = rand(10001, 10017);
 ?>
 <header class="header">
@@ -16,18 +18,14 @@ $random = rand(10001, 10017);
                         <nav class="header__menu mobile-menu">
                             <ul>
                                 <li class="active"><a href="./index.html">Inicio</a></li>
-                                <li><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>
+                                <li><a href="./lista.php">Lista de Juegos<span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="./categories.html">Categories</a></li>
-                                        <li><a href="./anime-details.html">Anime Details</a></li>
-                                        <li><a href="./anime-watching.html">Anime Watching</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
-                                        <li><a href="./signup.html">Sign Up</a></li>
-                                        <li><a href="./login.html">Login</a></li>
+                                        <?php foreach($etiquetas as $item):?>
+                                        <li><a href="./lista.php?etiqueta=<?php echo $item ?>"><?php echo $item ?></a></li>
+                                        <?php endforeach;?>
                                     </ul>
                                 </li>
                                 <li><a href="./sitio_juego.php?serial=<?php echo $random ?>">Juego Aleatorio</a></li>
-                                <li><a href="#">Contacts</a></li>
                             </ul>
                         </nav>
                     </div>

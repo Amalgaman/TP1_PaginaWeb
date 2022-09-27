@@ -8,8 +8,7 @@ function getJuegos()
             'serial' => '10001',
             'portada' => 'img/ejemplo1.jpg',
             'nombre' => 'Grand Theft Auto V',
-            "etiqueta1" => "Shooter",
-            "etiqueta2" => "Accion",
+            "etiquetas" => array("Shooter","Accion"),
             "descripcion" => "La tan esperada tercera entrega del clasico de Valve resulto ser en realidad un placeholder de un trabajo practico.",
             "precio" => 500,
             "calificacion" => 10,
@@ -21,8 +20,7 @@ function getJuegos()
             'serial' => '10002',
             'portada' => 'img/ejemplo2.jpg',
             'nombre' => 'Batman: Arkham Knight',
-            "etiqueta1" => "Multijugador",
-            "etiqueta2" => "Estrategia",
+            "etiquetas" => array("Multijugador","Estrategia"),
             "descripcion" => "A re que es gratis. El MOBA mas jugado del mundo ahora es pago, unite a esta aventura.",
             "precio" => 1000,
             "calificacion" => 8.5,
@@ -34,8 +32,7 @@ function getJuegos()
             'serial' => '10003',
             'portada' => 'img/ejemplo3.jpeg',
             'nombre' => 'Crash Bandicoot N. Sane Trilogy',
-            "etiqueta1" => "Supervivencia",
-            "etiqueta2" => "Multijugador",
+            "etiquetas" => array("Supervivencia", "Multijugador"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -47,8 +44,7 @@ function getJuegos()
             'serial' => '10004',
             'portada' => 'img/ejemplo4.jpeg',
             'nombre' => 'Red Dead Redemption 2',
-            "etiqueta1" => "+18",
-            "etiqueta2" => "Terror Psicologico",
+            "etiquetas" => array("+18", "Terror Psicologico"),
             "descripcion" => "La tan esperada tercera entrega del clasico de Valve resulto ser en realidad un placeholder de un trabajo practico.",
             "precio" => 500,
             "calificacion" => 10,
@@ -60,8 +56,7 @@ function getJuegos()
             'serial' => '10005',
             'portada' => 'img/ejemplo5.png',
             'nombre' => 'DOOM ETERNAL',
-            "etiqueta1" => "Shooter",
-            "etiqueta2" => "Accion",
+            "etiquetas" => array("Shooter", "Accion"),
             "descripcion" => "A re que es gratis. El MOBA mas jugado del mundo ahora es pago, unite a esta aventura.",
             "precio" => 1000,
             "calificacion" => 8.5,
@@ -73,8 +68,7 @@ function getJuegos()
             'serial' => '10006',
             'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'Dragon Ball Fighter Z',
-            "etiqueta1" => "Carreras",
-            "etiqueta2" => "Accion",
+            "etiquetas" => array("Carreras","Accion"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -86,8 +80,7 @@ function getJuegos()
             'serial' => '10007',
             'portada' => 'img/ejemplo7.jpg',
             'nombre' => 'NARUTO SHIPPUDEN: Ultimate Ninja STORM 4',
-            "etiqueta1" => "RPG",
-            "etiqueta2" => "Estrategia",
+            "etiquetas" => array("RPG","Estrategia"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -99,8 +92,7 @@ function getJuegos()
             'serial' => '10008',
             'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'FIFA 23',
-            "etiqueta1" => "Carreras",
-            "etiqueta2" => "Accion",
+            "etiquetas" => array("Carreras","Accion"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -112,8 +104,7 @@ function getJuegos()
             'serial' => '10009',
             'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'Elden Ring',
-            "etiqueta1" => "Carreras",
-            "etiqueta2" => "Accion",
+            "etiquetas" => array("Carreras","Accion"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -125,8 +116,7 @@ function getJuegos()
             'serial' => '10010',
             'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'Minecraft',
-            "etiqueta1" => "Carreras",
-            "etiqueta2" => "Accion",
+            "etiquetas" => array("Carreras","Accion"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -138,8 +128,7 @@ function getJuegos()
             'serial' => '10011',
             'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'ARK: Survival Evolved',
-            "etiqueta1" => "Carreras",
-            "etiqueta2" => "Accion",
+            "etiquetas" => array("Carreras","Accion"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -151,8 +140,7 @@ function getJuegos()
             'serial' => '10012',
             'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'Payday 2 ',
-            "etiqueta1" => "Carreras",
-            "etiqueta2" => "Accion",
+            "etiquetas" => array("Carreras","Accion"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -164,8 +152,7 @@ function getJuegos()
                 'serial' => '10013',
                 'portada' => 'img/ejemplo6.jpeg',
                 'nombre' => 'Hollow Knight ',
-                "etiqueta1" => "Carreras",
-                "etiqueta2" => "Accion",
+                "etiquetas" => array("Carreras","Accion"),
                 "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
                 "precio" => 300,
                 "calificacion" => 7.8,
@@ -177,8 +164,7 @@ function getJuegos()
             'serial' => '10014',
             'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'Call of Duty: Modern Warfare II',
-            "etiqueta1" => "Carreras",
-            "etiqueta2" => "Accion",
+            "etiquetas" => array("Carreras","Accion"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -190,8 +176,7 @@ function getJuegos()
                     'serial' => '10015',
                     'portada' => 'img/ejemplo6.jpeg',
                     'nombre' => 'Goat Simulator',
-                    "etiqueta1" => "Carreras",
-                    "etiqueta2" => "Accion",
+                    "etiquetas" => array("Carreras","Accion"),
                     "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
                     "precio" => 300,
                     "calificacion" => 7.8,
@@ -203,8 +188,7 @@ function getJuegos()
                     'serial' => '10016',
                     'portada' => 'img/ejemplo6.jpeg',
                     'nombre' => 'The Sims 4',
-                    "etiqueta1" => "Carreras",
-                    "etiqueta2" => "Accion",
+                    "etiquetas" => array("Carreras","Accion"),
                     "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
                     "precio" => 300,
                     "calificacion" => 7.8,
@@ -216,8 +200,7 @@ function getJuegos()
                     'serial' => '10017',
                     'portada' => 'img/ejemplo6.jpeg',
                     'nombre' => 'Terraria',
-                    "etiqueta1" => "Carreras",
-                    "etiqueta2" => "Accion",
+                    "etiquetas" => array("Carreras","Accion"),
                     "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
                     "precio" => 300,
                     "calificacion" => 7.8,
@@ -244,6 +227,23 @@ function getAleatorios($cantidad){
     
 }
 
+function getEtiquetas(){
+    
+    $lista_juegos = getJuegos();
+    $lista_etiquetas = array();
+
+    foreach ($lista_juegos as $item){
+        
+        foreach($item["etiquetas"] as $etiqueta)
+        if(!in_array($etiqueta, $lista_etiquetas)){
+            array_push($lista_etiquetas, $etiqueta);
+        }
+    }
+    
+    sort($lista_etiquetas);
+    return $lista_etiquetas;
+}
+
 function getJuegoBySerial($serial)
 {
 
@@ -261,5 +261,22 @@ function getJuegoBySerial($serial)
     }
 
     return $juego;
+
+}
+function getJuegoByEtiqueta($etiqueta)
+{
+    $lista_completa = getJuegos();
+    $juegos_filtrados = array();
+    $contador = 0;
+    
+
+    foreach ( $lista_completa as $item){
+        
+        if(in_array($etiqueta, $item["etiquetas"])){
+            array_push($juegos_filtrados, $item);
+        }
+    }
+
+    return $juegos_filtrados;
 
 }
