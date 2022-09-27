@@ -6,8 +6,8 @@
     $lista = getJuegos();
     $portada = getAleatorios(5);
     $recomendados = getAleatorios(3);
-    $populares = getAleatorios(6);
-    $novedades = getAleatorios(6);
+    $populares = getAleatorios(3);
+    $novedades = getAleatorios(5);
     ?>
 <head>
     <title>Holiwis</title>
@@ -36,10 +36,11 @@
                 <?php foreach($portada as $item): ?>
                 <div class="hero__items set-bg" data-setbg="<?php echo $item["portada"] ?>">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col">
                             <div class="hero__text">
-                                <div class="label"><?php echo $item["etiqueta1"] ?></div>
-                                <div class="label"><?php echo $item["etiqueta2"] ?></div>
+                                <?php foreach($item["etiquetas"] as $etiqueta):?>
+                                <div class="label"><?php echo $etiqueta?></div>
+                                <?php endforeach;?>
                                 <h2><?php echo $item["nombre"] ?></h2>
                                 <p><?php echo $item["descripcion"] ?></p>
                                 <a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><span>Ver Mas</span> <i class="fa fa-angle-right"></i></a>
@@ -67,7 +68,7 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="btn__all">
-                                    <a href="#" class="primary-btn">Ver todo <span class="arrow_right"></span></a>
+                                    <a href="./lista.php" class="primary-btn">Ver todo <span class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -82,8 +83,9 @@
                                     </div>
                                     <div class="product__item__text">
                                         <ul>
-                                            <li><?php echo $item["etiqueta1"] ?></li>
-                                            <li><?php echo $item["etiqueta2"] ?></li>
+                                            <?php foreach($item["etiquetas"] as $etiqueta):?>
+                                                <li><?php echo $etiqueta ?></li>
+                                            <?php endforeach;?>  
                                         </ul>
                                         <h5><a href="#"><?php echo $item["nombre"] ?></a></h5>
                                     </div>
@@ -101,7 +103,7 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="btn__all">
-                                    <a href="#" class="primary-btn">VER TODO <span class="arrow_right"></span></a>
+                                    <a href="./lista.php" class="primary-btn">VER TODO <span class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -116,8 +118,9 @@
                                     </div>
                                     <div class="product__item__text">
                                         <ul>
-                                            <li><?php echo $item["etiqueta1"] ?></li>
-                                            <li><?php echo $item["etiqueta2"] ?></li>
+                                            <?php foreach($item["etiquetas"] as $etiqueta):?>
+                                                <li><?php echo $etiqueta?></li>
+                                            <?php endforeach;?>  
                                         </ul>
                                         <h5><a href="#"><?php echo $item["nombre"] ?></a></h5>
                                     </div>
