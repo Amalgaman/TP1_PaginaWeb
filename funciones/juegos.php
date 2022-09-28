@@ -20,7 +20,7 @@ function getJuegos()
             'serial' => '10002',
             'portada' => 'img/ejemplo2.jpg',
             'nombre' => 'Batman: Arkham Knight',
-            "etiquetas" => array("Multijugador","Estrategia"),
+            "etiquetas" => array("Multijugador","Estrategia","Hack and Slash"),
             "descripcion" => "A re que es gratis. El MOBA mas jugado del mundo ahora es pago, unite a esta aventura.",
             "precio" => 1000,
             "calificacion" => 8.5,
@@ -290,7 +290,7 @@ function getJuegosSimilares($etiquetas,$juego_sitio){
         
         foreach($juegos as $juego){
             
-            if( in_array($etiqueta, $juego['etiquetas']) and !in_array($lista_similares, $juego) and $juego != $juego_sitio){
+            if(!in_array($lista_similares, $juego) and $juego != $juego_sitio){
                 
                 array_push($lista_similares, $juego);
 

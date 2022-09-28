@@ -47,7 +47,7 @@
                                         <select name="etiqueta" id="etiqueta">
                                             <option value="">Todos</option>
                                             <?php foreach($etiquetas as $op): ?>
-                                                <option <?php if($op == $etiqueta): ?> selected <?php endif ?> value="<?php echo $op ?>"><?php echo $op ?></option>
+                                            <option  <?php if($op == $etiqueta): ?> selected <?php endif ?> value="<?php echo $op ?>"><?php echo $op ?></option>
                                             <?php endforeach?>        
                                         </select>
                                     </form>

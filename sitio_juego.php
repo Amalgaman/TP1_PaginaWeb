@@ -13,7 +13,7 @@
 
 <head> 
     
-<title><?php echo $juego["nombre"] ?> - Paginarda</title>
+<title><?php echo $juego["nombre"] ?> | Vapor</title>
     <?php
     require "componentes/_head.php";
     ?>
@@ -63,23 +63,24 @@
                             <div class="anime__details__widget">
                                 <div class="row">
 
-                                    <div class="col-lg-6 col-md-6">
+                                    <div class="col-lg-8 col-md-6">
                                     
                                         <ul>
                                             <li><span>Calificacion:</span> <?php echo $juego["calificacion"] ?>/10</li>
                                             <li><span>Desarrollador:</span> <?php echo $juego["desarrollador"] ?></li>
                                             <li><span>Lanzamiento:</span> <?php echo $juego["lanzamiento"] ?></li>
-                                            <li><span>Generos:</span> <?php foreach($juego["etiquetas"] as $etiqueta):
-                                                 echo "{$etiqueta} , "; 
+                                            <li><span>Generos:</span> 
+                                            <?php $primero = true;
+                                                foreach($juego["etiquetas"] as $etiqueta):
+                                                if($primero){
+                                                 echo "{$etiqueta}";
+                                                 $primero=false;
+                                                }else{
+                                                echo ", {$etiqueta}";
+                                                } 
                                                  endforeach?> </li>
                                         </ul>
                                     </div>
-                                    
-                                      <!--   <div class="col-lg-6 col-md-6">
-                                       <iframe class="img-fluid" width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                            <iframe class="w-auto h-auto "width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    --> 
                                 </div>
                             </div>
                             <div class="anime__details__btn">
