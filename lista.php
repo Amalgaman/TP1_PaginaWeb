@@ -42,6 +42,23 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
+                <form id="filtro" class="product__page__filter" action="lista.php" method="get">
+                        
+                        <select name="etiqueta" id="etiqueta" onchange="recargar()">
+                            <option value="">Todos</option>
+                            <?php foreach($etiquetas as $op): ?>
+                            <option  <?php if($op == $etiqueta): ?> selected <?php endif ?> value="<?php echo $op ?>"><?php echo $op ?></option>
+                            <?php endforeach?>        
+                        </select>
+                    </form>
+                    <script>
+                        function recargar()
+                        {
+                            document.getElementById('filtro').submit();
+                        }
+                    </script>
+
+                                    <!--
                                     <form class="product__page__filter" action="lista.php" method="get">
                                         <button type="submit">Filtrar:</button>
                                         <select name="etiqueta" id="etiqueta">
@@ -51,6 +68,7 @@
                                             <?php endforeach?>        
                                         </select>
                                     </form>
+                                    -->
                                 </div>
                             </div>
                         </div>
