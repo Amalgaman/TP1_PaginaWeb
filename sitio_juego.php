@@ -107,7 +107,7 @@
                             <?php foreach($similares as $item): ?>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="<?php echo $item["portada"] ?>">
+                                    <div class="product__item__pic set-bg" data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                                         <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
                                         <div class="view">$ <?php echo $item["precio"] ?></div>
                                     </div>
