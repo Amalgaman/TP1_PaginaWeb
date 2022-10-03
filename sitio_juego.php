@@ -34,17 +34,20 @@
     <section class="anime-details spad">
         <div class="container">
             <div class="row">
-                <div class="col mb-5">
-                <iframe class="w-100"width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-12 mb-5">
+                    <div class="embed-responsive embed-responsive-16by9">
+                         <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+               
                 </div>
             </div>
             <div class="anime__details__content">
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="anime__details__pic set-bg" data-setbg="<?php echo $juego["portada"] ?>">
+                    <div class="col-lg-5">
+                        <div class="anime__details__pic set-bg" data-setbg="./img/portadas/por_<?php echo $juego["serial"] ?>.jpg">
                         </div>
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-7">
                         <div class="anime__details__text">
                             <div class="anime__details__title">
                                 <h3><?php echo $juego["nombre"] ?></h3>

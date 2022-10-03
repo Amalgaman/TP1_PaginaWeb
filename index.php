@@ -28,13 +28,13 @@
     <?php
     require "componentes/_header.php";
     ?>
-    
+
     <!-- Carrousel de la portda (Hero) -->
     <section class="hero">
         <div class="container">
             <div class="hero__slider owl-carousel">
                 <?php foreach($portada as $item): ?>
-                <div class="hero__items set-bg" data-setbg="<?php echo $item["portada"] ?>">
+                <div class="hero__items set-bg" data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                     <div class="row">
                         <div class="col">
                             <div class="hero__text">
