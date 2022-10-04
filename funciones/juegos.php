@@ -340,7 +340,6 @@ function getJuegos()
         "trailer" => "Z6_C2ppkdVc"
             ), array(
             'serial' => '10032',
-
             'nombre' => 'MUNDO GATURRO',
             "etiquetas" => array("Carreras","Accion"),
             "descripcion" => "Mundo Gaturro es un juego en línea multijugador para niños basada en el personaje Gaturro. El sitio fue desarrollado en el año 2010 por la empresa argentina QB9 Entertainment, mismo año que se lanzó una adaptación cinematográfica sobre dicho personaje de historietas y animado.",
@@ -361,8 +360,7 @@ function getJuegos()
                 "lanzamiento" => "12/12/2020",
                 "trailer" => "C3AdqjClPD4"
             ) , array(
-                'serial' => '10032',
-    
+                'serial' => '10034',
                 'nombre' => 'Counter-Strike: Global Offensive',
                 "etiquetas" => array("Carreras","Accion"),
                 "descripcion" => "Counter-Strike: Global Offensive (CS:GO) amplía el juego de acción por equipos del que fue pionero cuando salió hace más de 20 años. CS:GO incluye nuevos mapas, personajes, armas y modos de juego, y ofrece versiones actualizadas del contenido clásico de Counter-Strike (de_dust2, etc.)",
@@ -372,7 +370,7 @@ function getJuegos()
                 "lanzamiento" => "12/12/2020",
                 "trailer" => "edYCtaNueQY"
                 ), array(
-                    'serial' => '10033',
+                    'serial' => '10035',
                     'nombre' => 'Valorant',
                     "etiquetas" => array("Carreras","Accion"),
                     "descripcion" => "Valorant es un hero shooter en primera persona ambientado en un futuro próximo.Los jugadores asumen el control de agentes, personajes que provienen de una gran cantidad de países y culturas de todo el mundo. En el modo de juego principal, los jugadores se unen al equipo atacante o defensor con cada equipo que tiene cinco jugadores.",

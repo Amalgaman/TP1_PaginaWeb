@@ -14,6 +14,7 @@
     <?php
     require "componentes/_head.php";
     ?>
+    <link rel="icon" href="./img/favicon-16x16.png">
 </head>
 
 <body>
