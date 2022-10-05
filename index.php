@@ -10,10 +10,11 @@
     $novedades = getAleatorios(5);
     ?>
 <head>
-    <title>Holiwis</title>
+    <title>Inicio | Vapor Gaming</title>
     <?php
     require "componentes/_head.php";
     ?>
+    
 </head>
 
 <body>
@@ -28,13 +29,13 @@
     <?php
     require "componentes/_header.php";
     ?>
-    
+
     <!-- Carrousel de la portda (Hero) -->
     <section class="hero">
         <div class="container">
             <div class="hero__slider owl-carousel">
                 <?php foreach($portada as $item): ?>
-                <div class="hero__items set-bg" data-setbg="<?php echo $item["portada"] ?>">
+                <div class="hero__items set-bg" data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                     <div class="row">
                         <div class="col">
                             <div class="hero__text">
@@ -76,9 +77,8 @@
                             <?php foreach($recomendados as $item): ?>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="<?php echo $item["portada"] ?>">
+                                    <div class="product__item__pic set-bg" data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                                         <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view">$ <?php echo $item["precio"] ?></div>
                                     </div>
                                     <div class="product__item__text">
@@ -87,7 +87,7 @@
                                                 <li><?php echo $etiqueta ?></li>
                                             <?php endforeach;?>  
                                         </ul>
-                                        <h5><a href="#"><?php echo $item["nombre"] ?></a></h5>
+                                        <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -111,9 +111,8 @@
                             <?php foreach($populares as $item): ?>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="<?php echo $item["portada"] ?>">
+                                    <div class="product__item__pic set-bg" data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                                         <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"> $ <?php echo $item["precio"] ?></div>
                                     </div>
                                     <div class="product__item__text">
@@ -122,7 +121,7 @@
                                                 <li><?php echo $etiqueta?></li>
                                             <?php endforeach;?>  
                                         </ul>
-                                        <h5><a href="#"><?php echo $item["nombre"] ?></a></h5>
+                                        <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -136,10 +135,10 @@
                     </div>
                     <?php foreach($novedades as $item): ?>
                         <div class="product__sidebar__view__item set-bg"
-                            data-setbg="<?php echo $item["portada"] ?>">
+                            data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                             <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
                             <div class="view"> $ <?php echo $item["precio"] ?></div>
-                            <h5><a href="#"><?php echo $item["nombre"] ?></a></h5>
+                            <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></a></h5>
                         </div>
                     <?php endforeach ?>         
                 </div>           

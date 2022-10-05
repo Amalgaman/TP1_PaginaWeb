@@ -6,82 +6,75 @@ function getJuegos()
     $lista = array(
         array(
             'serial' => '10001',
-            'portada' => 'img/ejemplo1.jpg',
             'nombre' => 'Grand Theft Auto V',
-            "etiquetas" => array("Shooter","Accion","Multijugador"),
-            "descripcion" => "La tan esperada tercera entrega del clasico de Valve resulto ser en realidad un placeholder de un trabajo practico.",
+            "etiquetas" => array("Mundo Abierto","Accion","Multijugador"),
+            "descripcion" => "Grand Theft Auto V para PC ofrece a los jugadores la opción de explorar el galardonado mundo de Los Santos y el condado de Blaine con una resolución de 4K y disfrutar del juego a 60 fotogramas por segundo.",
             "precio" => 500,
             "calificacion" => 10,
-            "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2020",
+            "desarrollador" => "Rockstar Games",
+            "lanzamiento" => "14/04/2015",
             "trailer" => "QkkoHAzjnUs"
         ),
         array(
             'serial' => '10002',
-            'portada' => 'img/ejemplo2.jpg',
             'nombre' => 'Batman: Arkham Knight',
-            "etiquetas" => array("Multijugador","Estrategia","Hack and Slash"),
-            "descripcion" => "A re que es gratis. El MOBA mas jugado del mundo ahora es pago, unite a esta aventura.",
+            "etiquetas" => array("Accion","Mundo Abierto"),
+            "descripcion" => "Batman™: Arkham Knight es la épica conclusión de la galardonada trilogía de Arkham, creada por Rocksteady Studios. El título, desarrollado en exclusiva para plataformas de nueva generación, presenta la espectacular versión del batmóvil imaginada por Rocksteady.",
             "precio" => 1000,
             "calificacion" => 8.5,
-            "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2020",
+            "desarrollador" => "Rocksteady Studios",
+            "lanzamiento" => "23/06/2015",
             "trailer" => "dxa34RatmSc"
         ),
         array(
             'serial' => '10003',
-            'portada' => 'img/ejemplo3.jpeg',
             'nombre' => 'Crash Bandicoot N. Sane Trilogy',
-            "etiquetas" => array("Supervivencia", "Multijugador"),
-            "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
+            "etiquetas" => array("Plataformero", "Aventura"),
+            "descripcion" => "¡Vuelve Crash Bandicoot™, tu marsupial favorito! Mejorado, embelesado y listo para bailar con la colección de juegos La trilogía. Revive tus momentos favoritos con Crash Bandicoot™, Crash Bandicoot™ 2: Cortex Strikes Back y Crash Bandicoot™ 3: Warped.",
             "precio" => 300,
             "calificacion" => 7.8,
-            "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2020",
+            "desarrollador" => "Vicarious Visions",
+            "lanzamiento" => "29/06/2018",
             "trailer" => "F7G91RjVmvk"
         ),
         array(
             'serial' => '10004',
-            'portada' => 'img/ejemplo4.jpeg',
             'nombre' => 'Red Dead Redemption 2',
-            "etiquetas" => array("+18", "Terror Psicologico"),
-            "descripcion" => "La tan esperada tercera entrega del clasico de Valve resulto ser en realidad un placeholder de un trabajo practico.",
+            "etiquetas" => array("Mundo Abierto", "Aventura","Accion"),
+            "descripcion" => "Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es la épica historia de Arthur Morgan y la banda de Van der Linde, que huyen por toda América en el albor de una nueva era. ",
             "precio" => 500,
             "calificacion" => 10,
-            "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2020",
+            "desarrollador" => "Rockstar Games",
+            "lanzamiento" => "05/12/2019",
             "trailer" => "gmA6MrX81z4"
         ),
         array(
             'serial' => '10005',
-            'portada' => 'img/ejemplo5.png',
-            'nombre' => 'DOOM ETERNAL',
+            'nombre' => 'DOOM Eternal',
             "etiquetas" => array("Shooter", "Accion"),
-            "descripcion" => "A re que es gratis. El MOBA mas jugado del mundo ahora es pago, unite a esta aventura.",
+            "descripcion" => "Los ejércitos del infierno han invadido la Tierra. Ponte en la piel del Slayer en una épica campaña para un jugador y cruza dimensiones para detener la destrucción definitiva de la humanidad. No le tienen miedo a nada... salvo a ti.",
             "precio" => 1000,
             "calificacion" => 8.5,
-            "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2020",
+            "desarrollador" => "id Software",
+            "lanzamiento" => "20/03/2020",
             "trailer" => "6SRj82vc1Jg"
         ),
         array(
             'serial' => '10006',
-            'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'Dragon Ball Fighter Z',
-            "etiquetas" => array("Carreras","Accion"),
-            "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
+            "etiquetas" => array("Pelea","Anime","Multijugador"),
+            "descripcion" => "DRAGON BALL FighterZ nace de lo que hace a la serie DRAGON BALL tan famosa: luchas espectaculares e interminables con luchadores superpoderosos.",
             "precio" => 300,
             "calificacion" => 7.8,
-            "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2020",
+            "desarrollador" => "Arc System Works",
+            "lanzamiento" => "26/01/2018",
             "trailer" => "YNAfOG4GfFQ"
         ),
         array(
             'serial' => '10007',
-            'portada' => 'img/ejemplo7.jpg',
             'nombre' => 'NARUTO SHIPPUDEN: Ultimate Ninja STORM 4',
-            "etiquetas" => array("RPG","Estrategia"),
-            "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
+            "etiquetas" => array("Anime","Pelea","Multijugador"),
+            "descripcion" => "¡Con el nuevo título de la aclamada saga STORM emprenderás un viaje impresionante y lleno de color! ¡Benefíciate de un sistema de combate totalmente renovado y prepárate para sumergirte en los combates más épicos que hayas visto nunca!",
             "precio" => 300,
             "calificacion" => 7.8,
             "desarrollador" => "X Software",
@@ -90,9 +83,8 @@ function getJuegos()
         ),
         array(
             'serial' => '10008',
-            'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'FIFA 23',
-            "etiquetas" => array("Carreras","Accion"),
+            "etiquetas" => array("Deporte","Multijugador"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -102,9 +94,8 @@ function getJuegos()
         ), 
         array(
             'serial' => '10009',
-            'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'Elden Ring',
-            "etiquetas" => array("Carreras","Accion"),
+            "etiquetas" => array("RPG","Mundo Abierto","Accion"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -114,9 +105,8 @@ function getJuegos()
         ), 
         array(
             'serial' => '10010',
-            'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'Minecraft',
-            "etiquetas" => array("Carreras","Accion"),
+            "etiquetas" => array("Mundo Abierto","Supervivencia","Multijugador"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -126,9 +116,8 @@ function getJuegos()
         ), 
         array(
             'serial' => '10011',
-            'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'ARK: Survival Evolved',
-            "etiquetas" => array("Carreras","Accion"),
+            "etiquetas" => array("Supervivencia","Accion","Mundo Abierto"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -138,9 +127,8 @@ function getJuegos()
         ), 
         array(
             'serial' => '10012',
-            'portada' => 'img/ejemplo6.jpeg',
-            'nombre' => 'Payday 2 ',
-            "etiquetas" => array("Carreras","Accion"),
+            'nombre' => 'Payday 2',
+            "etiquetas" => array("Shooter","Multijugador"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -150,9 +138,8 @@ function getJuegos()
         ),  
         array(
                 'serial' => '10013',
-                'portada' => 'img/ejemplo6.jpeg',
                 'nombre' => 'Hollow Knight ',
-                "etiquetas" => array("Carreras","Accion"),
+                "etiquetas" => array("Mundo Abierto","Aventura","Plataformero"),
                 "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
                 "precio" => 300,
                 "calificacion" => 7.8,
@@ -162,9 +149,8 @@ function getJuegos()
         ), 
         array(
             'serial' => '10014',
-            'portada' => 'img/ejemplo6.jpeg',
             'nombre' => 'Call of Duty: Modern Warfare II',
-            "etiquetas" => array("Carreras","Accion"),
+            "etiquetas" => array("Shooter","Accion","Multijugador"),
             "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
             "precio" => 300,
             "calificacion" => 7.8,
@@ -173,10 +159,9 @@ function getJuegos()
             "trailer" => "r72GP1PIZa0" 
               ),  
               array(
-                    'serial' => '10015',
-                    'portada' => 'img/ejemplo6.jpeg',
+                    'serial' => '10015',  
                     'nombre' => 'Goat Simulator',
-                    "etiquetas" => array("Carreras","Accion"),
+                    "etiquetas" => array("Mundo Abierto","Simulacion"),
                     "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
                     "precio" => 300,
                     "calificacion" => 7.8,
@@ -186,9 +171,8 @@ function getJuegos()
               ),  
               array(
                     'serial' => '10016',
-                    'portada' => 'img/ejemplo6.jpeg',
                     'nombre' => 'The Sims 4',
-                    "etiquetas" => array("Carreras","Accion"),
+                    "etiquetas" => array("Simulacion","Supervivencia"),
                     "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
                     "precio" => 300,
                     "calificacion" => 7.8,
@@ -198,16 +182,204 @@ function getJuegos()
               ),  
               array(
                     'serial' => '10017',
-                    'portada' => 'img/ejemplo6.jpeg',
+    
                     'nombre' => 'Terraria',
-                    "etiquetas" => array("Carreras","Accion"),
+                    "etiquetas" => array("Mundo Abierto","Multijugador","Supervivencia"),
                     "descripcion" => "El mejor juego se supervivencia para niños rata, ahora con mas figuras geometricas, como curvas y conos.",
                     "precio" => 300,
                     "calificacion" => 7.8,
                     "desarrollador" => "X Software",
                     "lanzamiento" => "12/12/2020",
                     "trailer" => "w7uOhFTrrq0"
-    )
+    ),  array(
+                'serial' => '10018',
+                'nombre' => 'Mortal Kombat 11 ',
+                "etiquetas" => array("Pelea","Accion","Multijugador"),
+                "descripcion" => "Mortal Kombat 11 es un videojuego de lucha desarrollado por NetherRealm Studios y publicado por Warner Bros. Interactive Entertainment. Se ejecuta en una versión muy modificada de Unreal Engine 3, ​ es la undécima entrega principal de la serie Mortal Kombat y una secuela de 2015 Mortal Kombat X.",
+                "precio" => 300,
+                "calificacion" => 7.8,
+                "desarrollador" => "X Software",
+                "lanzamiento" => "12/12/2020",
+                "trailer" => "7zwQPJmg-Kg"
+    ),   array(
+                'serial' => '10019',
+                'nombre' => 'God of War',
+                "etiquetas" => array("Accion","Aventura"),
+                "descripcion" => "Kratos ha dejado atrás su venganza contra los dioses del Olimpo y vive ahora como un hombre en los dominios de los dioses y monstruos nórdicos. En este mundo cruel e implacable debe luchar para sobrevivir… y enseñar a su hijo a hacerlo también.",
+                "precio" => 300,
+                "calificacion" => 7.8,
+                "desarrollador" => "X Software",
+                "lanzamiento" => "12/12/2020",
+                "trailer" => "AN3jEjjcZ-k"
+    ),    array(
+                'serial' => '10020',
+                'nombre' => 'Frostpunk ',
+                "etiquetas" => array("Supervivencia","Estrategia"),
+                "descripcion" => "Frostpunk es el primer juego de supervivencia de una sociedad. Como dirigente de la última ciudad del mundo, tu deber será el de lidiar tanto con los ciudadanos como con la infraestructura.",
+                "precio" => 300,
+                "calificacion" => 7.8,
+                "desarrollador" => "X Software",
+                "lanzamiento" => "12/12/2020",
+                "trailer" => "qqEpSOFDXGA"
+    ),    array(
+        'serial' => '10021',
+        'nombre' => 'Phasmophobia ',
+        "etiquetas" => array("Estrategia","Multijugador"),
+        "descripcion" => "El jugador toma el control de un miembro de un grupo de hasta cuatro jugadores, en los roles de cazadores de fantasmas que exploran entornos urbanos y son contratados para lidiar con fantasmas que habitan diferentes instalaciones abandonadas como hogares, escuelas, prisiones y asilos.",
+        "precio" => 300,
+        "calificacion" => 7.8,
+        "desarrollador" => "X Software",
+        "lanzamiento" => "12/12/2020",
+        "trailer" => "sRa9oeo5KiY"
+    ),    array(
+                'serial' => '10022',
+    
+                'nombre' => 'Subnautica',
+                "etiquetas" => array("Supervivencia","Simulacion","Accion"),
+                "descripcion" => "Desciende a las profundidades de un mundo submarino alienígena lleno de belleza y peligros. Crea equipamiento, pilota submarinos, terraforma el terreno, y burla los peligros para explorar exhuberantes arrecifes de coral, volcanes, sistemas de cuevas y más - Todo mientras intentas sobrevivir.",
+                "precio" => 300,
+                "calificacion" => 7.8,
+                "desarrollador" => "X Software",
+                "lanzamiento" => "12/12/2020",
+                "trailer" => "Rz2SNm8VguE"
+            ),    array(
+                'serial' => '10023',
+    
+                'nombre' => 'HITMAN 3',
+                "etiquetas" => array("Shooter","Accion","Estrategia"),
+                "descripcion" => "La muerte te espera. El Agente 47 regresa en HITMAN 3, el espectacular cierre de la trilogía de Mundo del asesinato.",
+                "precio" => 300,
+                "calificacion" => 7.8,
+                "desarrollador" => "X Software",
+                "lanzamiento" => "12/12/2020",
+                "trailer" => "R_Ob-fupzKg"
+            ), array(
+            'serial' => '10024',
+
+            'nombre' => 'The Elder Scrolls V: Skyrim',
+            "etiquetas" => array("RPG","Aventura","Accion"),
+            "descripcion" => "Skyrim Special Edition, ganador de más de 200 premios al Juego del año, da vida a la fantasía épica con un nivel de detalle asombroso. La Special Edition incluye el juego aclamado por la crítica.",
+            "precio" => 300,
+            "calificacion" => 7.8,
+            "desarrollador" => "X Software",
+            "lanzamiento" => "12/12/2020",
+            "trailer" => "X1p-_CNtL9w"
+            ), array(
+                'serial' => '10025',
+    
+                'nombre' => 'Darkest Dungeon II',
+                "etiquetas" => array("RPG","Estrategia","Roguelike"),
+                "descripcion" => "Darkest Dungeon II es un gran viaje maldito de exploración de mazmorras. Forma un grupo, equipa tu carruaje y recorre un paisaje decadente en un último intento por evitar el apocalipsis. Sin embargo, los mayores peligros a los que te enfrentarás quizá sean internos...",
+                "precio" => 300,
+                "calificacion" => 7.8,
+                "desarrollador" => "X Software",
+                "lanzamiento" => "12/12/2020",
+                "trailer" => "sJ6Gdd-pSPA"
+            ), array(
+                'serial' => '10026',
+    
+                'nombre' => 'Moonbreaker ',
+                "etiquetas" => array("Estrategia","Multijugador"),
+                "descripcion" => "Moonbreaker es un videojuego de simulación de juego de tablero por turnos donde impera la estrategia, diseñado para ser una verdadera experiencia con miniaturas digitales en el extenso universo de ciencia ficción.",
+                "precio" => 300,
+                "calificacion" => 7.8,
+                "desarrollador" => "X Software",
+                "lanzamiento" => "12/12/2020",
+                "trailer" => "JI_9z90CFoA"
+            ), array(
+                    'serial' => '10027',
+                    'nombre' => 'Outer Wilds',
+                    "etiquetas" => array("Aventura","Simulacion"),
+                    "descripcion" => "Outer Wilds, nombrado juego del año 2019 por Giant Bomb, Polygon, Eurogamer y The Guardian, es un galardonado título de mundo abierto, que se desarrolla en un enigmático sistema solar confinado a un bucle temporal infinito.",
+                    "precio" => 300,
+                    "calificacion" => 7.8,
+                    "desarrollador" => "X Software",
+                    "lanzamiento" => "12/12/2020",
+                    "trailer" => "d6LGnVCL1_A"
+            ), array(
+                'serial' => '10028',
+    
+                'nombre' => 'Neon Abyss ',
+                "etiquetas" => array("Plataformero","Shooter","Roguelike"),
+                "descripcion" => "Neon Abyss es un juego de plataformas y acción roguelike donde, como parte del Grim Squad de Hades, te abrirás camino a tiros a través de Abyss. Infinitas sinergias y un sistema de evolución de mazmorras único hacen de cada partida un nuevo desafío. ¡Prepárate para desatar el infierno!",
+                "precio" => 300,
+                "calificacion" => 7.8,
+                "desarrollador" => "X Software",
+                "lanzamiento" => "12/12/2020",
+                "trailer" => "lJlAFNplZiA"
+            ), array(
+        'serial' => '10029',
+        'nombre' => 'XCOM 2',
+        "etiquetas" => array("Estrategia"),
+        "descripcion" => "Los alienígenas dominan la Tierra y prometen un futuro brillante para la humanidad mientras ocultan sus siniestros planes. Ponte en la piel del líder de una guerrilla y, con todo en contra, prende la llama de la resistencia mundial para acabar con la amenaza alienígena y salvar a la especie humana de la extinción.",
+        "precio" => 300,
+        "calificacion" => 7.8,
+        "desarrollador" => "X Software",
+        "lanzamiento" => "12/12/2020",
+        "trailer" => "jVf-lCVYI6k"
+            ), array(
+            'serial' => '10030',
+
+            'nombre' => 'Totally Accurate Battle Simulator',
+            "etiquetas" => array("Simulacion","Multijugador"),
+            "descripcion" => "Lidera a wobblers rojos o azules llegados de tiempos remotos, lugares aterradores y mundos de fantasía, y observa como luchan con un motor físico de locura. Crea tus propios wobblers con el creador de unidades y lucha contra tus amigos en el modo multijugador en línea.",
+            "precio" => 300,
+            "calificacion" => 7.8,
+            "desarrollador" => "X Software",
+            "lanzamiento" => "12/12/2020",
+            "trailer" => "ah6OVetEmFQ"
+            ), array(
+        'serial' => '10031',
+        'nombre' => 'The Binding of Isaac Rebirth',
+        "etiquetas" => array("Shooter","Roguelike"),
+        "descripcion" => "The Binding of Isaac(o simplemente Isaac) es un videojuego independiente de rol de acción y de mazmorras (dungeon crawler) roguelike hecho en Adobe Flash, desarrollado por Edmund McMillen (diseño) y Florian Himsl (programación) y publicado por Edmund. Siendo Isaac, el jugador intenta escapar de su propia madre, la cual piensa que debe de sacrificar a su hijo para completar su tarea dada por Dios.",
+        "precio" => 300,
+        "calificacion" => 7.8,
+        "desarrollador" => "X Software",
+        "lanzamiento" => "12/12/2020",
+        "trailer" => "Z6_C2ppkdVc"
+            ), array(
+            'serial' => '10032',
+            'nombre' => 'Mundo Gaturro',
+            "etiquetas" => array("Mundo Abierto","Multijugador"),
+            "descripcion" => "Mundo Gaturro es un juego en línea multijugador para niños basada en el personaje Gaturro. El sitio fue desarrollado en el año 2010 por la empresa argentina QB9 Entertainment, mismo año que se lanzó una adaptación cinematográfica sobre dicho personaje de historietas y animado.",
+            "precio" => 300,
+            "calificacion" => 7.8,
+            "desarrollador" => "X Software",
+            "lanzamiento" => "12/12/2020",
+            "trailer" => "51i3q1VJ3Ww"
+            ), array(
+                'serial' => '10033',
+    
+                'nombre' => 'Club Penguin',
+                "etiquetas" => array("Mundo Abierto","Multijugador"),
+                "descripcion" => "Club Penguin es un juego online multijugador masivo o MMO, que consiste en un mundo virtual que contiene una serie de juegos y actividades online. Fue creado por New Horizon Interactive. Los jugadores utilizan avatares de pingüinos animados y juegan en un mundo abierto de temática antártica.",
+                "precio" => 300,
+                "calificacion" => 7.8,
+                "desarrollador" => "X Software",
+                "lanzamiento" => "12/12/2020",
+                "trailer" => "C3AdqjClPD4"
+            ) , array(
+                'serial' => '10034',
+                'nombre' => 'Counter-Strike: Global Offensive',
+                "etiquetas" => array("Shooter","Accion","Multijugador"),
+                "descripcion" => "Counter-Strike: Global Offensive (CS:GO) amplía el juego de acción por equipos del que fue pionero cuando salió hace más de 20 años. CS:GO incluye nuevos mapas, personajes, armas y modos de juego, y ofrece versiones actualizadas del contenido clásico de Counter-Strike (de_dust2, etc.)",
+                "precio" => 300,
+                "calificacion" => 7.8,
+                "desarrollador" => "X Software",
+                "lanzamiento" => "12/12/2020",
+                "trailer" => "edYCtaNueQY"
+                ), array(
+                    'serial' => '10035',
+                    'nombre' => 'Valorant',
+                    "etiquetas" => array("Multijugador","Accion","Estrategia","Shooter"),
+                    "descripcion" => "Valorant es un hero shooter en primera persona ambientado en un futuro próximo.Los jugadores asumen el control de agentes, personajes que provienen de una gran cantidad de países y culturas de todo el mundo. En el modo de juego principal, los jugadores se unen al equipo atacante o defensor con cada equipo que tiene cinco jugadores.",
+                    "precio" => 300,
+                    "calificacion" => 7.8,
+                    "desarrollador" => "X Software",
+                    "lanzamiento" => "12/12/2020",
+                    "trailer" => "Ey770ez6ROk"
+                ) 
 );
 
     return $lista;
@@ -290,7 +462,7 @@ function getJuegosSimilares($etiquetas,$juego_sitio){
         
         foreach($juegos as $juego){
             
-            if(!in_array($lista_similares, $juego) and $juego != $juego_sitio){
+            if(!in_array($juego, $lista_similares) and $juego != $juego_sitio){
                 
                 array_push($lista_similares, $juego);
 

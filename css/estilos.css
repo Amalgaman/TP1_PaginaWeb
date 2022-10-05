@@ -1,0 +1,211 @@
+
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes seleccion{
+    from {transform: scale(1)}
+    to {transform: scale(1.05)}
+}
+#extra a:hover{
+    color: rgb(187, 0, 0);
+    animation-name: seleccion;
+    animation-duration: 0.35s;
+}
+@keyframes seleccion{
+    0% {transform: scale(1)}
+    30% {transform: scale(1.05)}
+    100% {transform: scale(1)}
+}
+.video{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding: 0;
+    padding-bottom: 56.25%;
+    margin: 0;
+}
+iframe{
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.espacio{
+    height: 3.8rem;
+}
+.bg-dark {
+    background-color: rgb(0, 0, 0)!important;
+}
+.bg-light{
+    background-color: rgb(18, 18, 18)!important;
+}
+.traslucido,.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 25px;
+}
+.sombra{
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 25px;
+    padding: 15px;
+    margin: 10px;
+}
+.sombra-clara{
+    background-color: rgba(43, 43, 43, 0.212);
+    border-radius: 25px;
+    padding: 1rem;
+    margin: 10px;
+}
+#formulario{
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 25px;
+}
+input{
+    background-color: rgb(255, 0, 140);
+}
+.col{
+    min-width: 180px;
+}
+.fancybox__thumbs .carousel__slide .fancybox__thumb::after{
+    border-color: rgb(94, 0, 0);
+}
+h1,h2 {
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    background-image: url(../img/fondo2chico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom ;
+}
+#historia {
+    max-width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+#historia p{
+    color: rgba(255, 255, 255, 0.479);
+}
+a{
+    font-family: 'Inter', sans-serif;
+}
+#extra{
+    padding: 25px;
+}
+#empresa,#error{
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#empresa>div{
+    background-color: rgba(139, 139, 139, 0.11);
+}
+#preg{
+    justify-content: center;
+    align-content: center;
+}
+#preguntas a{
+    color: rgb(185, 0, 0);
+}
+#galeria{
+    background-image: url(../img/fondoamd.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 0;
+}
+#galeria>div{
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 10px;
+    padding: 2rem;
+}
+#galeria>div>div{
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#galeria a{
+    width: 100%;
+}
+#galeria img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#error>div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#error>div>div>div{
+    display: flex;
+    flex-direction: column;
+}
+.accordion-button:hover{
+    color: darkred;
+}
+.accordion-button:not(.collapsed)::after{
+    display: none;
+}
+.legal{
+    color: rgba(255, 255, 255, 0.507);
+    border-top: 2px solid rgba(255, 255, 255, 0.507);
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.legal ul{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+.legal li{
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+}
+.legal a{
+    color: rgba(255, 255, 255, 0.507);
+}
+.legal a:hover{
+    color: white;
+}
+
+@media only screen and (min-width: 768px){
+    .sombra-clara{
+        padding: 2rem;
+    }
+    #galeria a{
+        width: 50%;
+    }
+    /* .nav-item:not(:last-child){
+        border-right: 1px solid rgba(255, 255, 255, 0.781)!important;
+    } */
+}
+
+@media only screen and (min-width: 1024px){
+    body{
+        background-image: url(../img/fondo2.jpg);
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+    #formulario{
+        padding: 3rem;
+        background-color: rgba(139, 139, 139, 0.11);
+    }
+    #galeria a{
+        width: 33%;
+    }
+    .legal li:not(:last-child){
+        min-width: 100px;
+        border-right: 2px solid rgba(255, 255, 255, 0.507);
+    }
+}

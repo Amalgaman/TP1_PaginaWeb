@@ -36,7 +36,7 @@ body {
 	height: 100%;
 	font-family: "Mulish", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	background: #0b0c2a;
+	background: rgb(18, 18, 18);
 }
 
 h1,
@@ -95,6 +95,10 @@ textarea:focus {
 	outline: none;
 }
 
+a{
+	color: #ae0000;
+}
+
 a:hover,
 a:focus {
 	text-decoration: none;
@@ -134,7 +138,7 @@ ol {
 	top: -6px;
 	height: 32px;
 	width: 4px;
-	background: #e53637;
+	background: #ae0000;
 	content: "";
 }
 
@@ -183,7 +187,7 @@ ol {
 .site-btn {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #ae0000;
 	font-weight: 700;
 	border: none;
 	border-radius: 2px;
@@ -325,54 +329,30 @@ ol {
 
 /* CSS Propios
 /*----------------------------------------*/
-.carta{
-    background-color: #8c7851; 
-    color: #f9f4ef;
-    max-height:40rem;
-    min-height: 20rem;
-    padding: 0%;
-    overflow: hidden;
-}
-
-.carta_img{
-    position:absolute;
-    top: 0em;
-    z-index: 1;
-    margin: 0%;
-	max-height: 100%;
-}
-.carta_contenido{
-    padding-left:3em;
-    padding-right:3em;
-    padding-top: 1em;
-    padding-bottom: 3em;
-    position: absolute;
-    z-index:99;
-    background-color: #020826bd;
-    top:75%;
-    transition:all 1s;
-    height: 100%;
-}
-.carta_contenido:hover{
-    top:0%;
-}
-
-
 
 /*---------------------
   Header
 -----------------------*/
 
 .header {
-	background: #070720;
+	background: #000000;
+}
+
+.header__div{
+	display: flex;
+	align-items: center;
 }
 
 .header__logo {
-	padding: 20px 0 17px;
+	padding: 15px 0 10px;
 }
 
 .header__logo a {
 	display: inline-block;
+}
+
+.header__logo a img{
+	max-height: 35px;
 }
 
 .header__menu {
@@ -387,7 +367,7 @@ ol {
 }
 
 .header__menu ul li.active a {
-	background: #e53637;
+	background: #ae0000;
 	color: #ffffff;
 }
 
@@ -414,7 +394,7 @@ ol {
 	left: 0;
 	top: 82px;
 	width: 150px;
-	background: #ffffff;
+	background: #282828;
 	text-align: left;
 	padding: 5px 0;
 	z-index: 9;
@@ -432,9 +412,13 @@ ol {
 
 .header__menu ul li .dropdown li a {
 	font-size: 14px;
-	color: #111111;
+	color: #ffffff;
 	font-weight: 500;
 	padding: 5px 20px;
+}
+
+.header__menu ul li .dropdown li a:hover{
+	color: #ae0000;
 }
 
 .header__menu ul li a {
@@ -494,8 +478,8 @@ ol {
 
 .hero__text .label {
 	font-size: 13px;
-	color: #e53637;
-	background: #ffffff;
+	color: #ffffff;
+	background: #3d3d3d;
 	padding: 5px 14px 3px;
 	display: inline-block;
 	position: relative;
@@ -546,7 +530,7 @@ ol {
 .hero__text a span {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #ae0000;
 	display: inline-block;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -559,7 +543,7 @@ ol {
 .hero__text a i {
 	font-size: 20px;
 	display: inline-block;
-	background: #e53637;
+	background: #ae0000;
 	padding: 11px 5px 16px 8px;
 	color: #ffffff;
 	border-radius: 0 4px 4px 0;
@@ -613,7 +597,7 @@ ol {
 	font-size: 36px;
 	height: 66px;
 	width: 66px;
-	background: #0b0c2a;
+	background: #000000;
 	line-height: 66px;
 	text-align: center;
 	color: #ffffff;
@@ -697,7 +681,7 @@ ol {
 .product__item__pic .ep {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #ae0000;
 	display: inline-block;
 	padding: 2px 12px;
 	border-radius: 4px;
@@ -771,7 +755,7 @@ ol {
 	top: -6px;
 	height: 32px;
 	width: 4px;
-	background: #e53637;
+	background: #ae0000;
 	content: "";
 }
 
@@ -813,7 +797,7 @@ ol {
 .product__sidebar__view__item .ep {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #ae0000;
 	display: inline-block;
 	padding: 2px 12px;
 	border-radius: 4px;
@@ -846,6 +830,7 @@ ol {
 	color: #ffffff;
 	font-weight: 700;
 	line-height: 26px;
+	background-color: #ae0000a9;
 }
 
 .product__sidebar__comment {
@@ -1101,7 +1086,7 @@ ol {
 .anime__details__btn .follow-btn {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #ae0000;
 	display: inline-block;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -1114,7 +1099,7 @@ ol {
 .anime__details__btn .watch-btn span {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #ae0000;
 	display: inline-block;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -1127,7 +1112,7 @@ ol {
 .anime__details__btn .watch-btn i {
 	font-size: 20px;
 	display: inline-block;
-	background: #e53637;
+	background: #ae0000;
 	padding: 11px 5px 16px 8px;
 	color: #ffffff;
 	border-radius: 0 4px 4px 0;
@@ -1209,7 +1194,7 @@ ol {
 	font-weight: 700;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	background: #e53637;
+	background: #ae0000;
 	border: none;
 	padding: 10px 15px;
 	border-radius: 2px;
@@ -1343,7 +1328,7 @@ ol {
 
 .breadcrumb__links a i {
 	margin-right: 5px;
-	color: #e53637;
+	color: #ae0000;
 }
 
 .breadcrumb__links a:after {
@@ -1440,7 +1425,7 @@ ol {
 }
 
 .blog__item__text p span {
-	color: #e53637;
+	color: #ae0000;
 	margin-right: 5px;
 }
 
@@ -1670,7 +1655,7 @@ ol {
 }
 
 .blog__details__comment__item__text a:hover {
-	background: #e53637;
+	background: #ae0000;
 }
 
 .blog__details__form {
@@ -1860,7 +1845,7 @@ ol {
 }
 
 .login__register .primary-btn {
-	background: #e53637;
+	background: #ae0000;
 	padding: 12px 42px;
 }
 
@@ -1943,7 +1928,7 @@ ol {
 }
 
 .signup .login__form h5 a {
-	color: #e53637;
+	color: #ae0000;
 	font-weight: 700;
 }
 
@@ -1969,7 +1954,7 @@ ol {
 -----------------------*/
 
 .footer {
-	background: #070720;
+	background: #000000;
 	padding-top: 60px;
 	padding-bottom: 40px;
 	position: relative;
@@ -1988,7 +1973,7 @@ ol {
 	color: #ffffff;
 	height: 50px;
 	width: 50px;
-	background: #e53637;
+	background: #ae0000;
 	line-height: 50px;
 	text-align: center;
 	border-radius: 50%;
@@ -2029,7 +2014,7 @@ ol {
 }
 
 .footer__copyright__text a {
-	color: #e53637;
+	color: #ae0000;
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/

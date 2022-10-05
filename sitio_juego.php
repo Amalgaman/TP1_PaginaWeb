@@ -13,7 +13,7 @@
 
 <head> 
     
-<title><?php echo $juego["nombre"] ?> | Vapor</title>
+<title><?php echo $juego["nombre"] ?> | Vapor Gaming</title>
     <?php
     require "componentes/_head.php";
     ?>
@@ -34,17 +34,20 @@
     <section class="anime-details spad">
         <div class="container">
             <div class="row">
-                <div class="col mb-5">
-                <iframe class="w-100"width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-12 mb-5">
+                    <div class="embed-responsive embed-responsive-16by9">
+                         <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+               
                 </div>
             </div>
             <div class="anime__details__content">
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="anime__details__pic set-bg" data-setbg="<?php echo $juego["portada"] ?>">
+                    <div class="col-lg-5">
+                        <div class="anime__details__pic set-bg" data-setbg="./img/portadas/por_<?php echo $juego["serial"] ?>.jpg">
                         </div>
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-7">
                         <div class="anime__details__text">
                             <div class="anime__details__title">
                                 <h3><?php echo $juego["nombre"] ?></h3>
@@ -54,10 +57,10 @@
                                     <a href="#"><i class="fa fa-star"></i></a>
                                     <a href="#"><i class="fa fa-star"></i></a>
                                     <a href="#"><i class="fa fa-star"></i></a>
-                                    <a href="#"><i class="fa fa-star"></i></a>
                                     <a href="#"><i class="fa fa-star-half-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
                                 </div>
-                                <span>1.029 Votes</span>
+                                <span><?php echo $juego["calificacion"] ?>/10</span>
                             </div>
                             <p><?php echo $juego["descripcion"] ?></p>
                             <div class="anime__details__widget">
@@ -66,7 +69,6 @@
                                     <div class="col-lg-8 col-md-6">
                                     
                                         <ul>
-                                            <li><span>Calificacion:</span> <?php echo $juego["calificacion"] ?>/10</li>
                                             <li><span>Desarrollador:</span> <?php echo $juego["desarrollador"] ?></li>
                                             <li><span>Lanzamiento:</span> <?php echo $juego["lanzamiento"] ?></li>
                                             <li><span>Generos:</span> 
@@ -104,7 +106,7 @@
                             <?php foreach($similares as $item): ?>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="<?php echo $item["portada"] ?>">
+                                    <div class="product__item__pic set-bg" data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                                         <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
                                         <div class="view">$ <?php echo $item["precio"] ?></div>
                                     </div>

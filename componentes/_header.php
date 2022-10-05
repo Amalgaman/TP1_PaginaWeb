@@ -28,16 +28,12 @@ $random = rand(10001, (10000 + count(getJuegos())));
                                     </ul>
                                 </li>
                                 <li><a href="./sitio_juego.php?serial=<?php echo $random ?>">Juego Aleatorio</a></li>
+                                <li><a href="./formulario.php">Contactanos</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
-                <div class="col-lg-2">
-                    <div class="header__right">
-                        <a href="#" class="search-switch"><span class="icon_search"></span></a>
-                        <a href="./login.html"><span class="icon_profile"></span></a>
-                    </div>
-                </div>
+                
             </div>
             <div id="mobile-menu-wrap"></div>
         </div>

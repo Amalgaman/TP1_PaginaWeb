@@ -11,7 +11,7 @@
     ?>
 
 <head>
-    <title>Lista de Juegos</title>
+    <title>Lista de Juegos | Vapor Gaming</title>
     <?php
     require "componentes/_head.php";
     ?>
@@ -42,6 +42,23 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
+                <form id="filtro" class="product__page__filter" action="lista.php" method="get">
+                        
+                        <select name="etiqueta" id="etiqueta" onchange="recargar()">
+                            <option value="">Todos</option>
+                            <?php foreach($etiquetas as $op): ?>
+                            <option  <?php if($op == $etiqueta): ?> selected <?php endif ?> value="<?php echo $op ?>"><?php echo $op ?></option>
+                            <?php endforeach?>        
+                        </select>
+                    </form>
+                    <script>
+                        function recargar()
+                        {
+                            document.getElementById('filtro').submit();
+                        }
+                    </script>
+
+                                    <!--
                                     <form class="product__page__filter" action="lista.php" method="get">
                                         <button type="submit">Filtrar:</button>
                                         <select name="etiqueta" id="etiqueta">
@@ -51,6 +68,7 @@
                                             <?php endforeach?>        
                                         </select>
                                     </form>
+                                    -->
                                 </div>
                             </div>
                         </div>
@@ -58,11 +76,11 @@
                             <?php foreach($lista as $item):?>
                             <div class="col-lg-4 col-md-6 col-sm-6">   
                                 <div class="product__sidebar__view__item set-bg mix day years"
-                                    data-setbg="<?php echo $item["portada"] ?>">
+                                    data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                                     
-                                    <div class="ep"><?php echo $item["calificacion"] ?></div>
+                                    <div class="ep"><?php echo $item["calificacion"] ?>/10</div>
                                     <div class="view">$ <?php echo $item["precio"] ?></div>
-                                    <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></a></h5>
+                                    <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></h5>
                                 </div>    
                             </div>
                             <?php endforeach;?>
