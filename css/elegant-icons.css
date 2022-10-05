@@ -38,6 +38,7 @@ you can use the generic selector below, but it's slower:
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
+
 .arrow_up:before {
 	content: "\21";
 }

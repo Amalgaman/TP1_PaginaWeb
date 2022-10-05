@@ -11,7 +11,7 @@
     ?>
 
 <head>
-    <title>Lista de Juegos</title>
+    <title>Lista de Juegos | Vapor Gaming</title>
     <?php
     require "componentes/_head.php";
     ?>
@@ -78,9 +78,9 @@
                                 <div class="product__sidebar__view__item set-bg mix day years"
                                     data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                                     
-                                    <div class="ep"><?php echo $item["calificacion"] ?></div>
+                                    <div class="ep"><?php echo $item["calificacion"] ?>/10</div>
                                     <div class="view">$ <?php echo $item["precio"] ?></div>
-                                    <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></a></h5>
+                                    <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></h5>
                                 </div>    
                             </div>
                             <?php endforeach;?>

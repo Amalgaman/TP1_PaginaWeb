@@ -10,11 +10,11 @@
     $novedades = getAleatorios(5);
     ?>
 <head>
-    <title>Holiwis</title>
+    <title>Inicio | Vapor Gaming</title>
     <?php
     require "componentes/_head.php";
     ?>
-    <link rel="icon" href="./img/favicon-16x16.png">
+    
 </head>
 
 <body>
@@ -79,7 +79,6 @@
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                                         <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view">$ <?php echo $item["precio"] ?></div>
                                     </div>
                                     <div class="product__item__text">
@@ -88,7 +87,7 @@
                                                 <li><?php echo $etiqueta ?></li>
                                             <?php endforeach;?>  
                                         </ul>
-                                        <h5><a href="#"><?php echo $item["nombre"] ?></a></h5>
+                                        <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +113,6 @@
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                                         <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"> $ <?php echo $item["precio"] ?></div>
                                     </div>
                                     <div class="product__item__text">
@@ -123,7 +121,7 @@
                                                 <li><?php echo $etiqueta?></li>
                                             <?php endforeach;?>  
                                         </ul>
-                                        <h5><a href="#"><?php echo $item["nombre"] ?></a></h5>
+                                        <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -140,7 +138,7 @@
                             data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                             <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
                             <div class="view"> $ <?php echo $item["precio"] ?></div>
-                            <h5><a href="#"><?php echo $item["nombre"] ?></a></h5>
+                            <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></a></h5>
                         </div>
                     <?php endforeach ?>         
                 </div>           

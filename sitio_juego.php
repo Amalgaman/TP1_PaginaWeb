@@ -13,7 +13,7 @@
 
 <head> 
     
-<title><?php echo $juego["nombre"] ?> | Vapor</title>
+<title><?php echo $juego["nombre"] ?> | Vapor Gaming</title>
     <?php
     require "componentes/_head.php";
     ?>
@@ -57,10 +57,10 @@
                                     <a href="#"><i class="fa fa-star"></i></a>
                                     <a href="#"><i class="fa fa-star"></i></a>
                                     <a href="#"><i class="fa fa-star"></i></a>
-                                    <a href="#"><i class="fa fa-star"></i></a>
                                     <a href="#"><i class="fa fa-star-half-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
                                 </div>
-                                <span>1.029 Votes</span>
+                                <span><?php echo $juego["calificacion"] ?>/10</span>
                             </div>
                             <p><?php echo $juego["descripcion"] ?></p>
                             <div class="anime__details__widget">
@@ -69,7 +69,6 @@
                                     <div class="col-lg-8 col-md-6">
                                     
                                         <ul>
-                                            <li><span>Calificacion:</span> <?php echo $juego["calificacion"] ?>/10</li>
                                             <li><span>Desarrollador:</span> <?php echo $juego["desarrollador"] ?></li>
                                             <li><span>Lanzamiento:</span> <?php echo $juego["lanzamiento"] ?></li>
                                             <li><span>Generos:</span> 

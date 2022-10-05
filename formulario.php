@@ -2,7 +2,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Anime | Template</title>
+    <title>Contactanos | Vapor Gaming</title>
     <?php
     require "componentes/_head.php";
     ?>
@@ -19,68 +19,58 @@
     require "componentes/_header.php";
     ?>
 
-    <!-- Normal Breadcrumb Begin -->
-    <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg">
+    <!-- Portada -->
+    <section class="normal-breadcrumb set-bg" data-setbg="img/wallpaper.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="normal__breadcrumb__text">
-                        <h2>Login</h2>
-                        <p>Welcome to the official Anime blog.</p>
+                        <h2>¿Alguna duda?</h2>
+                        <p>Envia una consulta directa o buscanos en nuestras redes sociales.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Normal Breadcrumb End -->
-
-    <!-- Login Section Begin -->
-    <section class="login spad">
+    
+    <!-- Formulario -->
+    <section class="signup spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="login__form">
-                        <h3>Login</h3>
+                        <h3>Contactanos</h3>
                         <form action="#">
                             <div class="input__item">
-                                <input type="text" placeholder="Email address">
+                                <input type="text" placeholder="Correo Electrónico">
                                 <span class="icon_mail"></span>
                             </div>
                             <div class="input__item">
-                                <input type="text" placeholder="Password">
-                                <span class="icon_lock"></span>
+                                <input type="text" placeholder="Tu Nombre">
+                                <span class="icon_profile"></span>
                             </div>
-                            <button type="submit" class="site-btn">Login Now</button>
+                            <div class="input__item">
+                                <input type="text" placeholder="Mensaje">
+                                <span class="icon_pencil"></span>
+                            </div>
+                            <button type="submit" class="site-btn">Enviar</button>
                         </form>
-                        <a href="#" class="forget_pass">Forgot Your Password?</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="login__register">
-                        <h3>Dont’t Have An Account?</h3>
-                        <a href="#" class="primary-btn">Register Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="login__social">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="login__social__links">
-                            <span>or</span>
-                            <ul>
-                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> Sign in With
-                                Facebook</a></li>
-                                <li><a href="#" class="google"><i class="fa fa-google"></i> Sign in With Google</a></li>
-                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> Sign in With Twitter</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="login__social__links">
+                        <h3>Redes Sociales:</h3>
+                        <ul>
+                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> Buscar en Facebook</a>
+                            </li>
+                            <li><a href="#" class="google"><i class="fa fa-instagram"></i> Buscar en Instagram</a></li>
+                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> Buscar en Twitter</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Login Section End -->
 
     <!-- Importa el Footer -->
 <?php

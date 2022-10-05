@@ -329,39 +329,6 @@ ol {
 
 /* CSS Propios
 /*----------------------------------------*/
-.carta{
-    background-color: #8c7851; 
-    color: #f9f4ef;
-    max-height:40rem;
-    min-height: 20rem;
-    padding: 0%;
-    overflow: hidden;
-}
-
-.carta_img{
-    position:absolute;
-    top: 0em;
-    z-index: 1;
-    margin: 0%;
-	max-height: 100%;
-}
-.carta_contenido{
-    padding-left:3em;
-    padding-right:3em;
-    padding-top: 1em;
-    padding-bottom: 3em;
-    position: absolute;
-    z-index:99;
-    background-color: #260202bd;
-    top:75%;
-    transition:all 1s;
-    height: 100%;
-}
-.carta_contenido:hover{
-    top:0%;
-}
-
-
 
 /*---------------------
   Header
@@ -863,6 +830,7 @@ ol {
 	color: #ffffff;
 	font-weight: 700;
 	line-height: 26px;
+	background-color: #ae0000a9;
 }
 
 .product__sidebar__comment {
