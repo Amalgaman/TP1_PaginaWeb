@@ -20,7 +20,8 @@ $random = rand(10001, (10000 + count(getJuegos())));
                         <nav class="header__menu mobile-menu">
                             <ul>
                                 <li class="active"><a href="./index.php">Inicio</a></li>
-                                <li><a href="./lista.php">Lista de Juegos<span class="arrow_carrot-down"></span></a>
+                                <li><a href="./lista.php">Lista de Juegos
+                                    <!--<span class="arrow_carrot-down"></span>--></a>
                                     <ul class="dropdown">
                                         <?php foreach($etiquetas as $item):?>
                                         <li><a href="./lista.php?etiqueta=<?php echo $item ?>"><?php echo $item ?></a></li>
