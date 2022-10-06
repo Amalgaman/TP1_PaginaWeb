@@ -89,7 +89,7 @@ function getJuegos()
             "precio" => 9000,
             "calificacion" => 4.7,
             "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2022",
+            "lanzamiento" => "26/9/2022",
             "trailer" => "o3V-GvvzjE4"
         ), 
         array(
@@ -100,7 +100,7 @@ function getJuegos()
             "precio" => 9000,
             "calificacion" => 9.6,
             "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2022",
+            "lanzamiento" => "25/2/2022",
             "trailer" => "e5wwSxl0atc"
         ), 
         array(
@@ -122,7 +122,7 @@ function getJuegos()
             "precio" => 3000,
             "calificacion" => 7.0,
             "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2017",
+            "lanzamiento" => "29/8/2017",
             "trailer" => "FW9vsrPWujI"
         ), 
         array(
@@ -133,7 +133,7 @@ function getJuegos()
             "precio" => 3000,
             "calificacion" => 6.7,
             "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2013",
+            "lanzamiento" => "13/8/2013",
             "trailer" => "Gb-_DKC6wc4", 
         ),  
         array(
@@ -155,7 +155,7 @@ function getJuegos()
             "precio" => 9000,
             "calificacion" => 8.5,
             "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2022",
+            "lanzamiento" => "28/10/2022",
             "trailer" => "r72GP1PIZa0" 
               ),  
               array(
@@ -238,7 +238,7 @@ function getJuegos()
                 "precio" => 4500,
                 "calificacion" => 8.8,
                 "desarrollador" => "Unknown Worlds",
-                "lanzamiento" => "12/12/2018",
+                "lanzamiento" => "16/12/2014",
                 "trailer" => "Rz2SNm8VguE"
             ),    array(
                 'serial' => '10023',
@@ -248,7 +248,7 @@ function getJuegos()
                 "precio" => 9000,
                 "calificacion" => 8.7,
                 "desarrollador" => "X Software",
-                "lanzamiento" => "12/12/2021",
+                "lanzamiento" => "20/1/2021",
                 "trailer" => "R_Ob-fupzKg"
             ), array(
             'serial' => '10024',
@@ -258,7 +258,7 @@ function getJuegos()
             "precio" => 3000,
             "calificacion" => 9.3,
             "desarrollador" => "Bethesda",
-            "lanzamiento" => "12/12/2011",
+            "lanzamiento" => "11/11/2011",
             "trailer" => "X1p-_CNtL9w"
             ), array(
                 'serial' => '10025',
@@ -268,7 +268,7 @@ function getJuegos()
                 "precio" => 3800,
                 "calificacion" => 8.9,
                 "desarrollador" => "Red Hook",
-                "lanzamiento" => "12/12/2023",
+                "lanzamiento" => "26/10/2021",
                 "trailer" => "sJ6Gdd-pSPA"
             ), array(
                 'serial' => '10026',
@@ -288,7 +288,7 @@ function getJuegos()
                     "precio" => 3800,
                     "calificacion" => 8.8,
                     "desarrollador" => "X Software",
-                    "lanzamiento" => "12/12/2020",
+                    "lanzamiento" => "28/5/2019",
                     "trailer" => "d6LGnVCL1_A"
             ), array(
                 'serial' => '10028',
@@ -298,7 +298,7 @@ function getJuegos()
                 "precio" => 3000,
                 "calificacion" => 8.1,
                 "desarrollador" => "X Software",
-                "lanzamiento" => "12/12/2020",
+                "lanzamiento" => "14/07/2020",
                 "trailer" => "lJlAFNplZiA"
             ), array(
         'serial' => '10029',
@@ -318,7 +318,7 @@ function getJuegos()
             "precio" => 3000,
             "calificacion" => 8.3,
             "desarrollador" => "Landfall",
-            "lanzamiento" => "12/12/2021",
+            "lanzamiento" => "04/11/2014",
             "trailer" => "ah6OVetEmFQ"
             ), array(
         'serial' => '10031',
@@ -328,7 +328,7 @@ function getJuegos()
         "precio" => 2200,
         "calificacion" => 8.8,
         "desarrollador" => "X Software",
-        "lanzamiento" => "12/12/2014",
+        "lanzamiento" => "1/3/2010",
         "trailer" => "Z6_C2ppkdVc"
             ), array(
             'serial' => '10032',
@@ -349,7 +349,7 @@ function getJuegos()
                 "precio" => 0,
                 "calificacion" => 9.9,
                 "desarrollador" => "X Software",
-                "lanzamiento" => "12/12/2005",
+                "lanzamiento" => "24/10/2005",
                 "trailer" => "C3AdqjClPD4"
             ) , array(
                 'serial' => '10034',
@@ -359,7 +359,7 @@ function getJuegos()
                 "precio" => 0,
                 "calificacion" => 8.3,
                 "desarrollador" => "X Software",
-                "lanzamiento" => "12/12/2012",
+                "lanzamiento" => "21/8/2012",
                 "trailer" => "edYCtaNueQY"
                 ), array(
                     'serial' => '10035',
@@ -369,7 +369,7 @@ function getJuegos()
                     "precio" => 0,
                     "calificacion" => 8.0,
                     "desarrollador" => "X Software",
-                    "lanzamiento" => "12/12/2020",
+                    "lanzamiento" => "02/6/2020",
                     "trailer" => "Ey770ez6ROk"
                 ),
                 array(
