@@ -43,7 +43,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                 <form id="filtro" class="product__page__filter" action="lista.php" method="get">
-                        
+                        <p>Filtrar:</p>
                         <select name="etiqueta" id="etiqueta" onchange="recargar()">
                             <option value="">Todos</option>
                             <?php foreach($etiquetas as $op): ?>
@@ -73,17 +73,19 @@
                             </div>
                         </div>
                         <div class="row">
-                            <?php foreach($lista as $item):?>
+                            <?php
+                            foreach($lista as $item):?>
                             <div class="col-lg-4 col-md-6 col-sm-6">   
                                 <div class="product__sidebar__view__item set-bg mix day years"
                                     data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
                                     
                                     <div class="ep"><?php echo $item["calificacion"] ?>/10</div>
                                     <div class="view">$ <?php echo $item["precio"] ?></div>
-                                    <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></h5>
+
+                                    <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"]?>"><?php echo $item["nombre"] ?></a></h5>
                                 </div>    
                             </div>
-                            <?php endforeach;?>
+                            <?php endforeach?>
                         </div>
                     </div>
                     <div class="product__pagination">

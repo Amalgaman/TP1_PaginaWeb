@@ -473,6 +473,7 @@ ol {
 
 .hero__text {
 	position: relative;
+	max-width: 1030px;
 	z-index: 9;
 }
 
@@ -830,7 +831,15 @@ ol {
 	color: #ffffff;
 	font-weight: 700;
 	line-height: 26px;
-	background-color: #ae0000a9;
+	background-color: #000000b1;
+	border-radius: 5px;
+	padding: 0 5px;
+}
+
+.traslucido{
+	background-color: #000000bf;
+	border-radius: 15px;
+	padding: 0 10px;
 }
 
 .product__sidebar__comment {
@@ -2037,6 +2046,9 @@ ol {
 	.hero {
 		overflow: hidden;
 	}
+	.hero__text {
+		max-width: 830px;
+	}
 	.login__form {
 		position: relative;
 		padding-left: 32px;
@@ -2054,6 +2066,9 @@ ol {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.hero {
 		overflow: hidden;
+	}
+	.hero__text {
+		max-width: 590px;
 	}
 	.header {
 		position: relative;
@@ -2159,6 +2174,9 @@ ol {
 @media only screen and (max-width: 767px) {
 	.hero {
 		overflow: hidden;
+	}
+	.hero__text {
+		max-width: 410px;
 	}
 	.header {
 		position: relative;
@@ -2300,6 +2318,9 @@ ol {
 @media only screen and (max-width: 479px) {
 	.hero__slider.owl-carousel .owl-nav {
 		display: none;
+	}
+	.hero__text {
+		max-width: 80vw;
 	}
 	.hero__items {
 		padding: 250px 0 42px 15px;

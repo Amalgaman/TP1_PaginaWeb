@@ -42,8 +42,10 @@
                                 <?php foreach($item["etiquetas"] as $etiqueta):?>
                                 <div class="label"><?php echo $etiqueta?></div>
                                 <?php endforeach;?>
+                                <div class="traslucido">
                                 <h2><?php echo $item["nombre"] ?></h2>
                                 <p><?php echo $item["descripcion"] ?></p>
+                                </div>
                                 <a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><span>Ver Mas</span> <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
