@@ -10,7 +10,7 @@ function getJuegos()
             "etiquetas" => array("Mundo Abierto","Accion","Multijugador"),
             "descripcion" => "Grand Theft Auto V para PC ofrece a los jugadores la opción de explorar el galardonado mundo de Los Santos y el condado de Blaine con una resolución de 4K y disfrutar del juego a 60 fotogramas por segundo.",
             "precio" => 4500,
-            "calificacion" => 10,
+            "calificacion" => 8.3,
             "desarrollador" => "Rockstar Games",
             "lanzamiento" => "14/04/2015",
             "trailer" => "QkkoHAzjnUs"
@@ -21,7 +21,7 @@ function getJuegos()
             "etiquetas" => array("Accion","Mundo Abierto"),
             "descripcion" => "Batman™: Arkham Knight es la épica conclusión de la galardonada trilogía de Arkham, creada por Rocksteady Studios. El título, desarrollado en exclusiva para plataformas de nueva generación, presenta la espectacular versión del batmóvil imaginada por Rocksteady.",
             "precio" => 3800,
-            "calificacion" => 8.5,
+            "calificacion" => 8.7,
             "desarrollador" => "Rocksteady Studios",
             "lanzamiento" => "23/06/2015",
             "trailer" => "dxa34RatmSc"
@@ -43,7 +43,7 @@ function getJuegos()
             "etiquetas" => array("Mundo Abierto", "Aventura","Accion"),
             "descripcion" => "Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es la épica historia de Arthur Morgan y la banda de Van der Linde, que huyen por toda América en el albor de una nueva era. ",
             "precio" => 9000,
-            "calificacion" => 10,
+            "calificacion" => 8.6,
             "desarrollador" => "Rockstar Games",
             "lanzamiento" => "05/12/2019",
             "trailer" => "gmA6MrX81z4"
@@ -54,7 +54,7 @@ function getJuegos()
             "etiquetas" => array("Shooter", "Accion"),
             "descripcion" => "Los ejércitos del infierno han invadido la Tierra. Ponte en la piel del Slayer en una épica campaña para un jugador y cruza dimensiones para detener la destrucción definitiva de la humanidad. No le tienen miedo a nada... salvo a ti.",
             "precio" => 6000,
-            "calificacion" => 8.5,
+            "calificacion" => 8.8,
             "desarrollador" => "id Software",
             "lanzamiento" => "20/03/2020",
             "trailer" => "6SRj82vc1Jg"
@@ -65,7 +65,7 @@ function getJuegos()
             "etiquetas" => array("Pelea","Anime","Multijugador"),
             "descripcion" => "DRAGON BALL FighterZ nace de lo que hace a la serie DRAGON BALL tan famosa: luchas espectaculares e interminables con luchadores superpoderosos.",
             "precio" => 9000,
-            "calificacion" => 8.7,
+            "calificacion" => 7.4,
             "desarrollador" => "Arc System Works",
             "lanzamiento" => "26/01/2018",
             "trailer" => "YNAfOG4GfFQ"
@@ -76,7 +76,7 @@ function getJuegos()
             "etiquetas" => array("Anime","Pelea","Multijugador"),
             "descripcion" => "¡Con el nuevo título de la aclamada saga STORM emprenderás un viaje impresionante y lleno de color! ¡Benefíciate de un sistema de combate totalmente renovado y prepárate para sumergirte en los combates más épicos que hayas visto nunca!",
             "precio" => 9000,
-            "calificacion" => 8.0,
+            "calificacion" => 7.7,
             "desarrollador" => "X Software",
             "lanzamiento" => "12/12/2016",
             "trailer" => "9Vm4m15r2Xc"
@@ -87,7 +87,7 @@ function getJuegos()
             "etiquetas" => array("Deporte","Multijugador"),
             "descripcion" => "FIFA 23 nos acerca a The World's Game con la tecnología HyperMotion2 que ofrece una experiencia de juego aún más realista, la FIFA World Cup™ masculina y femenina disponibles durante la temporada, clubes femeninos, función de juego cruzado* y mucho más.",
             "precio" => 9000,
-            "calificacion" => 7.5,
+            "calificacion" => 4.7,
             "desarrollador" => "X Software",
             "lanzamiento" => "12/12/2022",
             "trailer" => "o3V-GvvzjE4"
@@ -110,8 +110,8 @@ function getJuegos()
             "descripcion" => "Minecraft es un videojuego de construcción de tipo «mundo abierto» o sandbox creado originalmente por el sueco Markus Persson, y posteriormente desarrollado por Mojang Studios.",
             "precio" => 3000,
             "calificacion" => 9.3,
-            "desarrollador" => "X Software",
-            "lanzamiento" => "12/12/2011",
+            "desarrollador" => "Mojang",
+            "lanzamiento" => "18/11/2011",
             "trailer" => "MmB9b5njVbA"
         ), 
         array(
@@ -131,7 +131,7 @@ function getJuegos()
             "etiquetas" => array("Shooter","Multijugador"),
             "descripcion" => "PAYDAY 2 es un juego de acción cooperativo para cuatro jugadores que, una vez más, permite a los jugadores ponerse en la piel del equipo original de PAYDAY - Dallas, Hoxton, Wolf y Chains - mientras descienden por Washington DC en una épica ola de crímenes.",
             "precio" => 3000,
-            "calificacion" => 7.9,
+            "calificacion" => 6.7,
             "desarrollador" => "X Software",
             "lanzamiento" => "12/12/2013",
             "trailer" => "Gb-_DKC6wc4", 
@@ -142,9 +142,9 @@ function getJuegos()
                 "etiquetas" => array("Mundo Abierto","Aventura","Plataformero"),
                 "descripcion" => "¡Forja tu propio camino en Hollow Knight! Una aventura épica a través de un vasto reino de insectos y héroes que se encuentra en ruinas. Explora cavernas tortuosas, combate contra criaturas corrompidas y entabla amistad con extraños insectos.",
                 "precio" => 2200,
-                "calificacion" => 7.8,
-                "desarrollador" => "X Software",
-                "lanzamiento" => "12/12/2017",
+                "calificacion" => 9.1,
+                "desarrollador" => "Team Cherry",
+                "lanzamiento" => "24/02/2017",
                 "trailer" => "UAO2urG23S4"
         ), 
         array(
@@ -164,9 +164,9 @@ function getJuegos()
                     "etiquetas" => array("Mundo Abierto","Simulacion"),
                     "descripcion" => "Goat Simulator es un juego de perspectiva en tercera persona abierta en la que el jugador controla a una cabra. El jugador es libre para explorar el mundo del juego, un entorno suburbano, como una cabra. La cabra puede saltar, correr, golpear cosas y lamer objetos. ",
                     "precio" => 1500,
-                    "calificacion" => 7.8,
-                    "desarrollador" => "X Software",
-                    "lanzamiento" => "12/12/2014",
+                    "calificacion" => 6.6,
+                    "desarrollador" => "Coffee Stain Studios",
+                    "lanzamiento" => "01/04/2014",
                     "trailer" => "dvWGLcdI8o8"
               ),  
               array(
@@ -176,8 +176,8 @@ function getJuegos()
                     "descripcion" => "Disfruta del poder de crear y controlar a personas en un mundo virtual donde no hay reglas. ¡Ejerce tu poder con total libertad, diviértete y juega a la vida!",
                     "precio" => 3000,
                     "calificacion" => 7.0,
-                    "desarrollador" => "X Software",
-                    "lanzamiento" => "12/12/2014",
+                    "desarrollador" => "Electronic Arts",
+                    "lanzamiento" => "02/09/2014",
                     "trailer" => "z00mK3Pxc8w"
               ),  
               array(
@@ -186,9 +186,9 @@ function getJuegos()
                     "etiquetas" => array("Mundo Abierto","Multijugador","Supervivencia"),
                     "descripcion" => "¡Cava, lucha, explora, construye! Con este juego de aventuras repleto de acción nada es imposible. ¡Pack de Cuatro también disponible!",
                     "precio" => 3000,
-                    "calificacion" => 8.3,
-                    "desarrollador" => "X Software",
-                    "lanzamiento" => "12/12/2011",
+                    "calificacion" => 8.7,
+                    "desarrollador" => "Re-Logic",
+                    "lanzamiento" => "16/05/2011",
                     "trailer" => "w7uOhFTrrq0"
     ),  array(
                 'serial' => '10018',
@@ -197,18 +197,18 @@ function getJuegos()
                 "descripcion" => "Mortal Kombat 11 es un videojuego de lucha desarrollado por NetherRealm Studios y publicado por Warner Bros. Interactive Entertainment. Se ejecuta en una versión muy modificada de Unreal Engine 3, ​ es la undécima entrega principal de la serie Mortal Kombat y una secuela de 2015 Mortal Kombat X.",
                 "precio" => 9000,
                 "calificacion" => 8.8,
-                "desarrollador" => "X Software",
-                "lanzamiento" => "12/12/2020",
+                "desarrollador" => "Warner Bros Games",
+                "lanzamiento" => "23/04/2019",
                 "trailer" => "7zwQPJmg-Kg"
     ),   array(
                 'serial' => '10019',
                 'nombre' => 'God of War',
-                "etiquetas" => array("Accion","Aventura"),
+                "etiquetas" => array("Accion","Aventura","Mundo Abierto"),
                 "descripcion" => "Kratos ha dejado atrás su venganza contra los dioses del Olimpo y vive ahora como un hombre en los dominios de los dioses y monstruos nórdicos. En este mundo cruel e implacable debe luchar para sobrevivir… y enseñar a su hijo a hacerlo también.",
                 "precio" => 3000,
                 "calificacion" => 9.5,
-                "desarrollador" => "X Software",
-                "lanzamiento" => "12/12/2018",
+                "desarrollador" => "Santa Monica",
+                "lanzamiento" => "20/04/2018",
                 "trailer" => "AN3jEjjcZ-k"
     ),    array(
                 'serial' => '10020',
@@ -217,8 +217,8 @@ function getJuegos()
                 "descripcion" => "Frostpunk es el primer juego de supervivencia de una sociedad. Como dirigente de la última ciudad del mundo, tu deber será el de lidiar tanto con los ciudadanos como con la infraestructura.",
                 "precio" => 4500,
                 "calificacion" => 8.4,
-                "desarrollador" => "X Software",
-                "lanzamiento" => "12/12/2018",
+                "desarrollador" => "11 bit studios",
+                "lanzamiento" => "24/04/2018",
                 "trailer" => "qqEpSOFDXGA"
     ),    array(
         'serial' => '10021',
@@ -227,17 +227,17 @@ function getJuegos()
         "descripcion" => "El jugador toma el control de un miembro de un grupo de hasta cuatro jugadores, en los roles de cazadores de fantasmas que exploran entornos urbanos y son contratados para lidiar con fantasmas que habitan diferentes instalaciones abandonadas como hogares, escuelas, prisiones y asilos.",
         "precio" => 2000,
         "calificacion" => 8.0,
-        "desarrollador" => "X Software",
-        "lanzamiento" => "12/12/2020",
+        "desarrollador" => "Kinetic Games",
+        "lanzamiento" => "18/09/2020",
         "trailer" => "sRa9oeo5KiY"
     ),    array(
                 'serial' => '10022',
                 'nombre' => 'Subnautica',
-                "etiquetas" => array("Supervivencia","Simulacion","Accion"),
+                "etiquetas" => array("Supervivencia","Simulacion","Aventura","Mundo Abierto"),
                 "descripcion" => "Desciende a las profundidades de un mundo submarino alienígena lleno de belleza y peligros. Crea equipamiento, pilota submarinos, terraforma el terreno, y burla los peligros para explorar exhuberantes arrecifes de coral, volcanes, sistemas de cuevas y más - Todo mientras intentas sobrevivir.",
                 "precio" => 4500,
                 "calificacion" => 8.8,
-                "desarrollador" => "X Software",
+                "desarrollador" => "Unknown Worlds",
                 "lanzamiento" => "12/12/2018",
                 "trailer" => "Rz2SNm8VguE"
             ),    array(
@@ -253,11 +253,11 @@ function getJuegos()
             ), array(
             'serial' => '10024',
             'nombre' => 'The Elder Scrolls V: Skyrim',
-            "etiquetas" => array("RPG","Aventura","Accion"),
+            "etiquetas" => array("RPG","Aventura","Accion","Mundo Abierto"),
             "descripcion" => "Skyrim Special Edition, ganador de más de 200 premios al Juego del año, da vida a la fantasía épica con un nivel de detalle asombroso. La Special Edition incluye el juego aclamado por la crítica.",
             "precio" => 3000,
             "calificacion" => 9.3,
-            "desarrollador" => "X Software",
+            "desarrollador" => "Bethesda",
             "lanzamiento" => "12/12/2011",
             "trailer" => "X1p-_CNtL9w"
             ), array(
@@ -266,8 +266,8 @@ function getJuegos()
                 "etiquetas" => array("RPG","Estrategia","Roguelike"),
                 "descripcion" => "Darkest Dungeon II es un gran viaje maldito de exploración de mazmorras. Forma un grupo, equipa tu carruaje y recorre un paisaje decadente en un último intento por evitar el apocalipsis. Sin embargo, los mayores peligros a los que te enfrentarás quizá sean internos...",
                 "precio" => 3800,
-                "calificacion" => 8.6,
-                "desarrollador" => "X Software",
+                "calificacion" => 8.9,
+                "desarrollador" => "Red Hook",
                 "lanzamiento" => "12/12/2023",
                 "trailer" => "sJ6Gdd-pSPA"
             ), array(
@@ -277,8 +277,8 @@ function getJuegos()
                 "descripcion" => "Moonbreaker es un videojuego de simulación de juego de tablero por turnos donde impera la estrategia, diseñado para ser una verdadera experiencia con miniaturas digitales en el extenso universo de ciencia ficción.",
                 "precio" => 4500,
                 "calificacion" => 8.3,
-                "desarrollador" => "X Software",
-                "lanzamiento" => "12/12/2022",
+                "desarrollador" => "Unknown Worlds",
+                "lanzamiento" => "29/09/2022",
                 "trailer" => "JI_9z90CFoA"
             ), array(
                     'serial' => '10027',
@@ -303,21 +303,21 @@ function getJuegos()
             ), array(
         'serial' => '10029',
         'nombre' => 'XCOM 2',
-        "etiquetas" => array("Estrategia"),
+        "etiquetas" => array("Estrategia","Accion"),
         "descripcion" => "Los alienígenas dominan la Tierra y prometen un futuro brillante para la humanidad mientras ocultan sus siniestros planes. Ponte en la piel del líder de una guerrilla y, con todo en contra, prende la llama de la resistencia mundial para acabar con la amenaza alienígena y salvar a la especie humana de la extinción.",
         "precio" => 9000,
         "calificacion" => 8.7,
-        "desarrollador" => "X Software",
-        "lanzamiento" => "12/12/2016",
+        "desarrollador" => "Firaxis Games",
+        "lanzamiento" => "05/02/2016",
         "trailer" => "jVf-lCVYI6k"
             ), array(
             'serial' => '10030',
             'nombre' => 'Totally Accurate Battle Simulator',
-            "etiquetas" => array("Simulacion","Multijugador"),
+            "etiquetas" => array("Accion","Simulacion","Multijugador"),
             "descripcion" => "Lidera a wobblers rojos o azules llegados de tiempos remotos, lugares aterradores y mundos de fantasía, y observa como luchan con un motor físico de locura. Crea tus propios wobblers con el creador de unidades y lucha contra tus amigos en el modo multijugador en línea.",
             "precio" => 3000,
             "calificacion" => 8.3,
-            "desarrollador" => "X Software",
+            "desarrollador" => "Landfall",
             "lanzamiento" => "12/12/2021",
             "trailer" => "ah6OVetEmFQ"
             ), array(
@@ -371,7 +371,18 @@ function getJuegos()
                     "desarrollador" => "X Software",
                     "lanzamiento" => "12/12/2020",
                     "trailer" => "Ey770ez6ROk"
-                ) 
+                ),
+                array(
+                    'serial' => '10036',
+                    'nombre' => 'NBA 2K23',
+                    "etiquetas" => array("Deporte","Multijugador"),
+                    "descripcion" => "Ponte a la altura de las circunstancias en NBA 2K23. Demuestra tu talento en Mi CARRERA. Empareja a All-Stars con leyendas eternas en MyTEAM. Construye tu propia dinastía en Mi GM, o guía a la NBA en una nueva dirección con Mi LIGA.",
+                    "precio" => 9000,
+                    "calificacion" => 5.7,
+                    "desarrollador" => "2K",
+                    "lanzamiento" => "08/09/2022",
+                    "trailer" => "p0YT85W2GL0"
+                )
 );
 
     return $lista;
