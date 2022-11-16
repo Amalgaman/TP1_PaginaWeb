@@ -24,7 +24,7 @@
     //Variables del paginado
     $cantidad = count($lista_filtrada);
     $pagina_actual = $_GET['pag'] ?? 1;
-    $cuantos_por_pagina = 3;
+    $cuantos_por_pagina = 6;
 
     $paginado_enlaces = paginador_enlaces($cantidad, $pagina_actual, $cuantos_por_pagina);
     $lista_filtrada = paginador_lista($lista_filtrada, $pagina_actual, $cuantos_por_pagina);
