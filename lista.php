@@ -2,12 +2,32 @@
 <html lang="es">
      <!-- Importa las funciones -->
      <?php
+    require_once('config/config.php');
     require_once('funciones/juegos.php');
-    $lista = getJuegos();
+    require_once('funciones/paginado.php');
+
+    try {
+        $conexion = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8', DB_USER, DB_PASSWORD);
+    }catch(PDOException $e){
+        header('Location: error.php');
+    }
+
+    $lista = getJuegos($conexion);
+
     $etiqueta = $_GET['etiqueta'] ?? null;
     if($etiqueta != null){
-        $lista = getJuegoByEtiqueta($etiqueta);
+        $lista_filtrada = getJuegoByEtiqueta($etiqueta,$lista);
+    }else{
+        $lista_filtrada = $lista;
     }
+
+    //Variables del paginado
+    $cantidad = count($lista_filtrada);
+    $pagina_actual = $_GET['pag'] ?? 1;
+    $cuantos_por_pagina = 3;
+
+    $paginado_enlaces = paginador_enlaces($cantidad, $pagina_actual, $cuantos_por_pagina);
+    $lista_filtrada = paginador_lista($lista_filtrada, $pagina_actual, $cuantos_por_pagina);
     ?>
 
 <head>
@@ -74,7 +94,7 @@
                         </div>
                         <div class="row">
                             <?php
-                            foreach($lista as $item):?>
+                            foreach($lista_filtrada as $item):?>
                             <div class="col-lg-4 col-md-6 col-sm-6">   
                                 <div class="product__sidebar__view__item set-bg mix day years"
                                     data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
@@ -89,12 +109,22 @@
                         </div>
                     </div>
                     <div class="product__pagination">
-                        <a href="#" class="current-page">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#"><i class="fa fa-angle-double-right"></i></a>
+
+                    <?php 
+                    if(is_null($etiqueta)){
+                        $etiqueta_link = '';
+                    }else{
+                        $etiqueta_link = "etiqueta={$etiqueta}&";
+                    }
+                    if($paginado_enlaces['anterior']): ?>
+                        <a href="?<?php echo $etiqueta_link?>pag=<?php echo $paginado_enlaces['primero'] ?>"><i class="fa fa-angle-double-left"></i></a>
+                        <a href="?<?php echo $etiqueta_link?>pag=<?php echo $paginado_enlaces['anterior'] ?>"><?php echo $paginado_enlaces['anterior'] ?></a>             
+                    <?php endif ?>
+                        <a href="#" class="current-page"><?php echo $paginado_enlaces['actual'] ?></a>
+                    <?php if($paginado_enlaces['siguiente']): ?> 
+                        <a href="?<?php echo $etiqueta_link?>pag=<?php echo $paginado_enlaces['siguiente'] ?>"><?php echo $paginado_enlaces['siguiente'] ?></a>
+                        <a href="?<?php echo $etiqueta_link?>pag=<?php echo $paginado_enlaces['ultimo'] ?>"><i class="fa fa-angle-double-right"></i></a>
+                    <?php endif ?>   
                     </div>
                 </div>
                 

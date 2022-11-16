@@ -1,9 +1,9 @@
 <?php
 require_once ("./funciones/juegos.php");
 
-$etiquetas = getEtiquetas();
+$etiquetas = getEtiquetas($lista);
 
-$random = rand(10001, (10000 + count(getJuegos())));
+$random = rand(10001, (10000 + count($lista)));
 ?>
 <header class="header">
         <div class="container">

@@ -1,5 +1,6 @@
 <?php
 
+/*
 function getJuegos()
 {
 
@@ -388,11 +389,31 @@ function getJuegos()
     return $lista;
 
 }
+*/
+
+function getJuegos(PDO $conexion){
+
+    $consulta = $conexion->prepare('
+        SELECT serial, nombre, descripcion, precio, calificacion, desarrollador, lanzamiento, trailer, etiquetas
+        FROM juegos
+    ');
+
+    $consulta->execute();
+
+    $juegos = $consulta->fetchAll(PDO::FETCH_ASSOC);
+
+    foreach($juegos as &$juego){
+        $arrayEtiquetas = explode ('-', $juego['etiquetas']);
+        $juego['etiquetas'] = $arrayEtiquetas;
+        $juego['serial'] = $juego['serial']+10000;
+    }
+
+    return $juegos;
+}
 
 //Esta funcion devuelve una array de juegos aleatorios, el parametro es la cantidad de juegos que va a tener el array
-function getAleatorios($cantidad){
+function getAleatorios($cantidad,$lista_mezclada){
     $lista_cortada = array();
-    $lista_mezclada = getJuegos();
     shuffle ($lista_mezclada);
     
     for($i = 0; $i < $cantidad; $i++){
@@ -402,9 +423,8 @@ function getAleatorios($cantidad){
     
 }
 
-function getEtiquetas(){
+function getEtiquetas($lista_juegos){
     
-    $lista_juegos = getJuegos();
     $lista_etiquetas = array();
 
     foreach ($lista_juegos as $item){
@@ -419,12 +439,12 @@ function getEtiquetas(){
     return $lista_etiquetas;
 }
 
-function getJuegoBySerial($serial)
+function getJuegoBySerial($serial,$juegos)
 {
 
     $juego = null;
     $contador = 0;
-    $juegos = getJuegos();
+
 
     while( $contador < count($juegos) and is_null($juego) )
     {
@@ -438,9 +458,9 @@ function getJuegoBySerial($serial)
     return $juego;
 
 }
-function getJuegoByEtiqueta($etiqueta)
+function getJuegoByEtiqueta($etiqueta, $lista_completa)
 {
-    $lista_completa = getJuegos();
+
     $juegos_filtrados = array();
     $contador = 0;
     
@@ -461,7 +481,7 @@ function getJuegosSimilares($etiquetas,$juego_sitio){
 
     foreach($etiquetas as $etiqueta){
         
-        $juegos = getJuegoByEtiqueta($etiqueta);
+        $juegos = getJuegoByEtiqueta($etiqueta,$juego_sitio);
         
         foreach($juegos as $juego){
             

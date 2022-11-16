@@ -11,12 +11,13 @@
         header('Location: error.php');
     }
 
-/*
-    $lista = getJuegos();
-    $portada = getAleatorios(5);
-    $recomendados = getAleatorios(3);
-    $populares = getAleatorios(3);
-    $novedades = getAleatorios(5);*/
+    $lista = getJuegos($conexion);
+
+    $portada = getAleatorios(5,$lista);
+    $recomendados = getAleatorios(3,$lista);
+    $populares = getAleatorios(3,$lista);
+    $novedades = getAleatorios(5,$lista);
+
     ?>
 <head>
     <title>Inicio | Vapor Gaming</title>
@@ -31,8 +32,6 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
-    
 
     <!-- Importa el Header -->
     <?php
