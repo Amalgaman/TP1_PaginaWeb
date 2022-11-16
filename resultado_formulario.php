@@ -20,7 +20,7 @@ if( isset($_POST['submit']) ) {
     }
 
     if( count($errores) == 0 ){
-        header('Location: resultado_formulario.php#formu');
+        header('Location: resultado_formulario.php');
     }
 
 }
@@ -95,7 +95,7 @@ if( isset($_POST['submit']) ) {
                 <div class="col-lg-6">
                     <div class="login__form">
                         <h3>Contactanos</h3>
-                        <form action="#formu" method="post">
+                        <form action="formulario.php" method="post">
                             <div class="input__item">
                                 <input type="email" name="email" placeholder="Correo Electrónico">
                                 <span class="icon_mail"></span>
@@ -110,9 +110,8 @@ if( isset($_POST['submit']) ) {
                             </div>
                             <button type="submit" class="site-btn" name="submit">Enviar</button>
                         </form>
-                        <?php foreach($errores as $error): ?>
-                            <li class="text text-danger mt-2"> <?php echo $error ?> </li>
-                        <?php endforeach ?>
+                        <div class="alert alert-success container-fluid text-center mt-4"> Se ha enviado el formulario </div>
+
                     </div>
                 </div>
                 <div class="col-lg-6">

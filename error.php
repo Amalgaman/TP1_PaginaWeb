@@ -34,7 +34,7 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li class="active"><a href="./index.php">Inicio</a></li>
+                                <li><a href="./index.php">Inicio</a></li>
                                 <li><a href="./lista.php">Lista de Juegos
                                     <!--<span class="arrow_carrot-down"></span>--></a>
                                 </li>

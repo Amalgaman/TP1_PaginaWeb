@@ -333,6 +333,22 @@ ol {
 /*---------------------
   Header
 -----------------------*/
+#error{
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#error>div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#error>div>div>div{
+    display: flex;
+    flex-direction: column;
+}
 
 .header {
 	background: #000000;
