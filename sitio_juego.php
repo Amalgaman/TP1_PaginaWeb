@@ -3,11 +3,20 @@
 
  <!-- Importa las funciones -->
  <?php
+    require_once('config/config.php');
     require_once('funciones/juegos.php');
+
+    try {
+        $conexion = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8', DB_USER, DB_PASSWORD);
+    }catch(PDOException $e){
+        header('Location: error.php');
+    }
+
+    $lista = getJuegos($conexion);
     $serial = $_GET["serial"];
-    $juego = getJuegoBySerial($serial);
+    $juego = getJuegoBySerial($serial,$lista);
     
-    $similares = getJuegosSimilares($juego["etiquetas"],$juego);
+    $similares = getJuegosSimilares($juego["etiquetas"],$lista);
       
     ?>
 

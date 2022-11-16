@@ -2,12 +2,22 @@
 <html lang="es">
  <!-- Importa las funciones -->
     <?php
+    require_once('config/config.php');
     require_once('funciones/juegos.php');
-    $lista = getJuegos();
-    $portada = getAleatorios(5);
-    $recomendados = getAleatorios(3);
-    $populares = getAleatorios(3);
-    $novedades = getAleatorios(5);
+
+    try {
+        $conexion = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8', DB_USER, DB_PASSWORD);
+    }catch(PDOException $e){
+        header('Location: error.php');
+    }
+
+    $lista = getJuegos($conexion);
+
+    $portada = getAleatorios(5,$lista);
+    $recomendados = getAleatorios(3,$lista);
+    $populares = getAleatorios(3,$lista);
+    $novedades = getAleatorios(5,$lista);
+
     ?>
 <head>
     <title>Inicio | Vapor Gaming</title>
@@ -22,8 +32,6 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
-    
 
     <!-- Importa el Header -->
     <?php
