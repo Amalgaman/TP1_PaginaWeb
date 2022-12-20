@@ -97,7 +97,7 @@
                             foreach($lista_filtrada as $item):?>
                             <div class="col-lg-4 col-md-6 col-sm-6">   
                                 <div class="product__sidebar__view__item set-bg mix day years"
-                                    data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
+                                    data-setbg=<?php $item["portada"] ?>>
                                     
                                     <div class="ep"><?php echo $item["calificacion"] ?>/10</div>
                                     <div class="view">$ <?php echo $item["precio"] ?></div>

@@ -45,7 +45,7 @@
             <div class="row">
                 <div class="col-12 mb-5">
                     <div class="embed-responsive embed-responsive-16by9">
-                         <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/<?php echo $juego["trailer"]?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         <iframe class="embed-responsive-item" width="560" height="315" src=<?php $juego["trailer"] ?>></iframe>
                     </div>
                
                 </div>
@@ -53,7 +53,7 @@
             <div class="anime__details__content">
                 <div class="row">
                     <div class="col-lg-5">
-                        <div class="anime__details__pic set-bg" data-setbg="./img/portadas/por_<?php echo $juego["serial"] ?>.jpg">
+                        <div class="anime__details__pic set-bg" data-setbg=<?php $juego["portada"] ?>>
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -115,7 +115,7 @@
                             <?php foreach($similares as $item): ?>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg=<?php $item["portada"] ?>>
                                         <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
                                         <div class="view">$ <?php echo $item["precio"] ?></div>
                                     </div>

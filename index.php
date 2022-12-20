@@ -43,7 +43,7 @@
         <div class="container">
             <div class="hero__slider owl-carousel">
                 <?php foreach($portada as $item): ?>
-                <div class="hero__items set-bg" data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
+                <div class="hero__items set-bg" data-setbg=<?php $item["portada"] ?>>
                     <div class="row">
                         <div class="col">
                             <div class="hero__text">
@@ -87,7 +87,7 @@
                             <?php foreach($recomendados as $item): ?>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg=<?php $item["portada"] ?>>
                                         <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
                                         <div class="view">$ <?php echo $item["precio"] ?></div>
                                     </div>
@@ -121,7 +121,7 @@
                             <?php foreach($populares as $item): ?>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg=<?php $item["portada"] ?>>
                                         <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
                                         <div class="view"> $ <?php echo $item["precio"] ?></div>
                                     </div>
@@ -144,8 +144,7 @@
                         <h5>Novedades</h5>
                     </div>
                     <?php foreach($novedades as $item): ?>
-                        <div class="product__sidebar__view__item set-bg"
-                            data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
+                        <div class="product__sidebar__view__item set-bg" data-setbg=<?php $item["portada"] ?>>
                             <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
                             <div class="view"> $ <?php echo $item["precio"] ?></div>
                             <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></a></h5>
