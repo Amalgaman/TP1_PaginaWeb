@@ -506,7 +506,7 @@ function getJuegosSimilares($etiquetas,$juego_sitio){
     return $lista_similares;
 }
 
-function addProducto(PDO $conexion, $data)
+function addJuego(PDO $conexion, $data)
 {
     $consulta = $conexion->prepare('
         INSERT INTO juegos(nombre, descripcion, precio, calificacion, desarrollador, lanzamiento, trailer, etiquetas, portada)
@@ -521,5 +521,49 @@ function addProducto(PDO $conexion, $data)
     $consulta->bindValue(':trailer', $data['trailer']);
     $consulta->bindValue(':etiquetas', $data['etiquetas']);
     $consulta->bindValue(':portada', $data['portada']);
+    $consulta->execute();
+}
+
+function getJuegobyID(PDO $conexion, $serial)
+{
+    $consulta = $conexion->prepare('
+        SELECT serial, nombre, descripcion, precio, calificacion, desarrollador, lanzamiento, trailer, etiquetas, portada
+        FROM juegos
+        WHERE serial = :serial
+    ');
+    $consulta->bindValue(':serial', $serial);
+    $consulta->execute();
+    $juego = $consulta->fetch(PDO::FETCH_ASSOC);
+    return $juego;
+}
+
+function updateJuego(PDO $conexion, $serial, $data)
+{
+    $consulta = $conexion->prepare('
+        UPDATE juegos
+        SET
+            nombre=:nombre, descripcion=:descripcion, precio=:precio, calificacion=:calificacion, desarrollador=:desarrollador, lanzamiento=:lanzamiento, trailer=:trailer, etiquetas=:etiquetas, portada=:portada
+        WHERE serial = :serial
+    ');
+    $consulta->bindValue(':serial', $serial);
+    $consulta->bindValue(':nombre', $data['nombre']);
+    $consulta->bindValue(':descripcion', $data['descripcion']);
+    $consulta->bindValue(':precio', $data['precio']);
+    $consulta->bindValue(':calificacion', $data['calificacion']);
+    $consulta->bindValue(':desarrollador', $data['desarrollador']);
+    $consulta->bindValue(':lanzamiento', $data['lanzamiento']);
+    $consulta->bindValue(':trailer', $data['trailer']);
+    $consulta->bindValue(':etiquetas', $data['etiquetas']);
+    $consulta->bindValue(':portada', $data['portada']);
+    $consulta->execute();
+}
+
+function deleteJuego(PDO $conexion, $serial)
+{
+    $consulta = $conexion->prepare('
+        DELETE FROM juegos
+        WHERE serial = :serial
+    ');
+    $consulta->bindValue(':serial', $serial);
     $consulta->execute();
 }

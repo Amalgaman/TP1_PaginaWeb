@@ -29,7 +29,7 @@ if( isset($_POST['añadir']) )
     if( !filter_var($precio, FILTER_VALIDATE_FLOAT) ){
         array_push($errores, 'Tenes que ingresar un precio con un formato correcto.');
     }
-    if( !filter_var($calificacion, FILTER_VALIDATE_INT)  ){
+    if( !filter_var($calificacion, FILTER_VALIDATE_FLOAT)  ){
         array_push($errores, 'Tenes ingresar una calificacion (del 1 al 10).');
     }
     if( empty($descripcion) ){
@@ -73,7 +73,7 @@ if( isset($_POST['añadir']) )
 
         move_uploaded_file( $portada['tmp_name'], $imagen_path );
 
-        addProducto($conexion, array(
+        addJuego($conexion, array(
             'nombre' => $nombre,
             'descripcion' => $descripcion,
             'precio' => $precio,
@@ -161,7 +161,10 @@ if( isset($_POST['añadir']) )
                                     <input name="calificacion" type="text" placeholder="Calificacion" value="<?php echo $calificacion?>">
                                     <span class="icon_star"></span>
                                 </div>
-                                <textarea class="input__item p-3" name="descripcion" id="descripcion" cols="44" rows="10" placeholder="Descripción" value="<?php echo $descripcion?>" style="color: #000030;"></textarea> 
+                                <div class="input__item">
+                                    <input name="descripcion" size="20" type="text" placeholder="Descripcion" value="<?php echo $descripcion?>">
+                                </div>
+                                <!-- <textarea class="input__item p-3" name="descripcion" id="descripcion" cols="44" rows="10" placeholder="Descripción" value="<?php echo $descripcion?>" style="color: #000030;"></textarea>  -->
                             </div>
                             <div class="">
                                 <div class="input__item">

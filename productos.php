@@ -60,8 +60,8 @@
                             <div class="col-lg-4 col-md-6 col-sm-6">   
                                 <div class="product__sidebar__view__item set-bg mix day years"
                                     data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
-                                    <a class="ep" href="eliminar.php?id=<?php echo $item['serial'] ?>">Eliminar</a>
-                                    <a class="view" href="editar.php?id=<?php echo $item['serial'] ?>">Editar</a>
+                                    <a class="ep" href="eliminar.php?serial=<?php echo $item['serial'] ?>">Eliminar</a>
+                                    <a class="view" href="editar.php?serial=<?php echo $item['serial'] ?>">Editar</a>
                                     <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></h5>
                                 </div>    
                             </div>
