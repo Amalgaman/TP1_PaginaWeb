@@ -139,49 +139,53 @@ if( isset($_POST['añadir']) )
         </div>
     </header>
 
-    <div class="container m-5 mx-auto">
-            <div class="row" >
-                <div class="col-lg-6  mx-auto">
-                    <div class="login__form">
-                        <h3 class="text-center">Añadir Juego</h3>
+    <div class="container m-5 mx-auto centrado">
+            <div class="row centrado" >
+                <div class="">
+                    <div class="login__form mx-auto">
+                        <h3 class="ml-5">Añadir Juego</h3>
                         <?php foreach($errores as $error): ?>
-                            <li class="text text-danger mt-2"> <?php echo $error ?> </li>
+                            <li class="text text-danger mt-2 ml-5"> <?php echo $error ?> </li>
                         <?php endforeach ?>
-                        <form class="m-3" method="post" action="#" enctype="multipart/form-data">
-                            <div class="input__item">
-                                <input name="nombre" type="text" placeholder="Nombre" value="<?php echo $nombre?>">
-                                <span class="icon_pencil-edit"></span>
-                            </div>
-                            <div class="input__item">
-                                <input name="precio" type="text" placeholder="Precio" value="<?php echo $precio?>">
-                                <span class="icon_creditcard"></span>
-                            </div>
-                            <div class="input__item">
-                                <input name="calificacion" type="text" placeholder="Calificacion" value="<?php echo $calificacion?>">
-                                <span class="icon_star"></span>
-                            </div>
-                                <textarea class="input__item p-3" name="descripcion" id="descripcion" cols="41" rows="10" placeholder="Descripción" value="<?php echo $descripcion?>" style="color: #000030;"></textarea>
+                        <form class="m-3 formulin" method="post" action="#" enctype="multipart/form-data">
+                            <div class="">
                                 <div class="input__item">
-                                <input name="desarrollador" id="desarrollador" type="text" placeholder="Desarrollador" value="<?php echo $desarrollador?>">
-                                <span class="icon_cog"></span>
+                                    <input name="nombre" type="text" placeholder="Nombre" value="<?php echo $nombre?>">
+                                    <span class="icon_pencil-edit"></span>
+                                </div>
+                                <div class="input__item">
+                                    <input name="precio" type="text" placeholder="Precio" value="<?php echo $precio?>">
+                                    <span class="icon_creditcard"></span>
+                                </div>
+                                <div class="input__item">
+                                    <input name="calificacion" type="text" placeholder="Calificacion" value="<?php echo $calificacion?>">
+                                    <span class="icon_star"></span>
+                                </div>
+                                <textarea class="input__item p-3" name="descripcion" id="descripcion" cols="44" rows="10" placeholder="Descripción" value="<?php echo $descripcion?>" style="color: #000030;"></textarea> 
                             </div>
-                            <div class="input__item">
-                                <input name="lanzamiento" type="date" placeholder="Fecha de Lanzamiento" value="<?php echo $lanzamiento?>">
-                                <span class="icon_calendar"></span>
+                            <div class="">
+                                <div class="input__item">
+                                    <input name="desarrollador" id="desarrollador" type="text" placeholder="Desarrollador" value="<?php echo $desarrollador?>">
+                                    <span class="icon_cog"></span>
+                                </div>
+                                <div class="input__item">
+                                    <input name="lanzamiento" type="date" placeholder="Fecha de Lanzamiento" value="<?php echo $lanzamiento?>">
+                                    <span class="icon_calendar"></span>
+                                </div>
+                                <div class="input__item">
+                                    <input name="trailer" type="text" placeholder="Enlace de video" value="<?php echo $trailer?>">
+                                    <span class="icon_search"></span>
+                                </div>
+                                <div class="input__item">
+                                    <input name="etiquetas" type="text" placeholder="Etiquetas" value="<?php echo $etiquetas?>">
+                                    <span class="icon_tags"></span> 
+                                </div>
+                                <div class="input__item">
+                                    <input type="file" class="form-control" id="portada" name="portada">
+                                    <span class="icon_image"></span>
+                                </div>
+                                <button type="submit" class="site-btn col-11" name="añadir">Añadir</button>
                             </div>
-                            <div class="input__item">
-                                <input name="trailer" type="text" placeholder="Enlace de video" value="<?php echo $trailer?>">
-                                <span class="icon_search"></span>
-                            </div>
-                            <div class="input__item">
-                                <input name="etiquetas" type="text" placeholder="Etiquetas" value="<?php echo $etiquetas?>">
-                                <span class="icon_tags"></span> 
-                            </div>
-                            <div class="input__item">
-                            <input type="file" class="form-control" id="portada" name="portada">
-                            <span class="icon_image"></span>
-                            </div>
-                            <button type="submit" class="site-btn" name="añadir">Añadir</button>
                         </form>
                     </div>
                 </div>

@@ -148,6 +148,33 @@ ol {
 	  margin-bottom: 8px;
   }
 
+  .formulin{
+	display: flex;
+	flex-wrap: nowrap;
+	width: min-content;
+  }
+
+  .formulin div,.formulin textarea,.formulin button{
+	margin: 0 10px;
+  }
+  .formulin button{
+	display: flex;
+	margin: auto;
+	justify-content: center;
+  }
+
+  @media (max-width: 1023.98px){
+	.formulin{
+		flex-wrap: wrap;
+	  }
+	  .formulin div,.formulin textarea{
+		margin: 0;
+	  }
+  .centrado{
+	width: min-content;
+  }
+  }
+
 /*---------------------
   Helper CSS
 -----------------------*/
