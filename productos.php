@@ -60,7 +60,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-6">   
                                 <div class="product__sidebar__view__item set-bg mix day years"
                                     data-setbg=<?php echo $item["portada"] ?>>
-                                    <a class="ep" href="eliminar.php?serial=<?php echo $item['serial'] ?>">Eliminar</a>
+                                    <a class="ep eliminar" href="eliminar.php?serial=<?php echo $item['serial'] ?>">Eliminar</a>
                                     <a class="view" href="editar.php?serial=<?php echo $item['serial'] ?>">Editar</a>
                                     <h5><a href="./sitio_juego.php?serial=<?php echo $item["serial"] ?>"><?php echo $item["nombre"] ?></h5>
                                 </div>    
@@ -70,11 +70,6 @@
                     </div>
                     <div class="product__pagination">
                         <a href="#" class="current-page">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#"><i class="fa fa-angle-double-right"></i></a>
                     </div>
                 </div>
                 
