@@ -505,3 +505,21 @@ function getJuegosSimilares($etiquetas,$juego_sitio){
 
     return $lista_similares;
 }
+
+function addProducto(PDO $conexion, $data)
+{
+    $consulta = $conexion->prepare('
+        INSERT INTO juegos(nombre, descripcion, precio, calificacion, desarrollador, lanzamiento, trailer, etiquetas, portada)
+        VALUES(:nombre, :descripcion, :precio, :calificacion, :desarrollador, :lanzamiento, :trailer, :etiquetas, :portada)
+    ');
+    $consulta->bindValue(':nombre', $data['nombre']);
+    $consulta->bindValue(':descripcion', $data['descripcion']);
+    $consulta->bindValue(':precio', $data['precio']);
+    $consulta->bindValue(':calificacion', $data['calificacion']);
+    $consulta->bindValue(':desarrollador', $data['desarrollador']);
+    $consulta->bindValue(':lanzamiento', $data['lanzamiento']);
+    $consulta->bindValue(':trailer', $data['trailer']);
+    $consulta->bindValue(':etiquetas', $data['etiquetas']);
+    $consulta->bindValue(':portada', $data['portada']);
+    $consulta->execute();
+}

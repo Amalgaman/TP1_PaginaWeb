@@ -112,6 +112,42 @@ ol {
 	margin: 0;
 }
 
+#botonoculto{
+	background-color: #00000000;
+	background: #00000000;
+	color: #00000000;
+	border: none;
+	margin: none;
+	padding: none;
+	position: absolute;
+	left: 10px;
+  }
+  
+  #botonoculto:hover{
+	  color: #00000000;
+	}
+  
+  .botoncito{
+	  background-color: #3d3d3d;
+	  color: white;
+	  padding: 8px 20px;
+	  margin: 8px;
+	  border-radius: 5px;
+	  position: absolute;
+	  right: 10px;
+	  top: -15px;
+  }
+  
+  .botoncito:hover{
+	  background-color: #ae0000;
+  }
+  
+  .uwu{
+	  display: block;
+	  color: #00000000;
+	  margin-bottom: 8px;
+  }
+
 /*---------------------
   Helper CSS
 -----------------------*/
@@ -1773,15 +1809,6 @@ ol {
 	padding-left: 145px;
 }
 
-.login__form:after {
-	position: absolute;
-	right: -14px;
-	top: -40px;
-	height: 330px;
-	width: 1px;
-	background: rgba(255, 255, 255, 0.2);
-	content: "";
-}
 
 .login__form h3 {
 	color: #ffffff;
