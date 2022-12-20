@@ -394,7 +394,7 @@ function getJuegos()
 function getJuegos(PDO $conexion){
 
     $consulta = $conexion->prepare('
-        SELECT serial, nombre, descripcion, precio, calificacion, desarrollador, lanzamiento, trailer, etiquetas
+        SELECT serial, nombre, descripcion, precio, calificacion, desarrollador, lanzamiento, trailer, etiquetas,portada
         FROM juegos
     ');
 

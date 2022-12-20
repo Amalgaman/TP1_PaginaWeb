@@ -45,7 +45,7 @@
             <div class="row">
                 <div class="col-12 mb-5">
                     <div class="embed-responsive embed-responsive-16by9">
-                         <iframe class="embed-responsive-item" width="560" height="315" src=<?php $juego["trailer"] ?>></iframe>
+                         <iframe class="embed-responsive-item" width="560" height="315" src=<?php echo $juego["trailer"] ?>></iframe>
                     </div>
                
                 </div>
@@ -53,7 +53,7 @@
             <div class="anime__details__content">
                 <div class="row">
                     <div class="col-lg-5">
-                        <div class="anime__details__pic set-bg" data-setbg=<?php $juego["portada"] ?>>
+                        <div class="anime__details__pic set-bg" data-setbg=<?php echo $juego["portada"] ?>>
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -115,7 +115,7 @@
                             <?php foreach($similares as $item): ?>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg=<?php $item["portada"] ?>>
+                                    <div class="product__item__pic set-bg" data-setbg=<?php echo $item["portada"] ?>>
                                         <div class="ep"><?php echo $item["calificacion"] ?> / 10</div>
                                         <div class="view">$ <?php echo $item["precio"] ?></div>
                                     </div>
