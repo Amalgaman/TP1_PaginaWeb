@@ -16,7 +16,7 @@ if( isset($_POST['submit']) ) {
     }
 
     if( empty($mensaje) ){
-        array_push($errores, 'No sabemos cual es tu mensaje');
+        array_push($errores, 'No sabemos cual es tu mensaje :/');
     }
 
     if( count($errores) == 0 ){
