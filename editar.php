@@ -186,7 +186,7 @@ if( isset($_POST['añadir']) )
                                     <span class="icon_calendar"></span>
                                 </div>
                                 <div class="input__item">
-                                    <input name="trailer" type="text" placeholder="Enlace de video" value="<?php echo $trailer?>">
+                                    <input name="trailer" type="text" placeholder="Enlace de video de youtube" value="<?php echo $trailer?>">
                                     <span class="icon_search"></span>
                                 </div>
                                 <div class="input__item">
