@@ -58,7 +58,7 @@
                             <div class="row">
                                 <div class="col-lg-8 col-md-8 col-sm-6">
                                     <div class="section-title">
-                                        <h4>Lista de juegos</h4>
+                                        <a href="productos.php" id="botonoculto">a</a> <h4>Lista de juegos</h4>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
@@ -97,7 +97,7 @@
                             foreach($lista_filtrada as $item):?>
                             <div class="col-lg-4 col-md-6 col-sm-6">   
                                 <div class="product__sidebar__view__item set-bg mix day years"
-                                    data-setbg="./img/portadas/por_<?php echo $item["serial"] ?>.jpg">
+                                    data-setbg=<?php echo $item["portada"] ?>>
                                     
                                     <div class="ep"><?php echo $item["calificacion"] ?>/10</div>
                                     <div class="view">$ <?php echo $item["precio"] ?></div>
