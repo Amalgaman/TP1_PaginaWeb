@@ -161,10 +161,7 @@ if( isset($_POST['añadir']) )
                                     <input name="calificacion" type="text" placeholder="Calificacion" value="<?php echo $calificacion?>">
                                     <span class="icon_star"></span>
                                 </div>
-                                <div class="input__item">
-                                    <input name="descripcion" size="20" type="text" placeholder="Descripcion" value="<?php echo $descripcion?>">
-                                </div>
-                                <!-- <textarea class="input__item p-3" name="descripcion" id="descripcion" cols="44" rows="10" placeholder="Descripción" value="<?php echo $descripcion?>" style="color: #000030;"></textarea>  -->
+                                <textarea class="input__item p-3" name="descripcion" id="descripcion" cols="44" rows="6" placeholder="Descripción" value="" style="color: #000030;"><?php echo $descripcion?></textarea>
                             </div>
                             <div class="">
                                 <div class="input__item">

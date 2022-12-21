@@ -156,7 +156,7 @@ if( isset($_POST['añadir']) )
             <div class="row centrado" >
                 <div class="">
                     <div class="login__form mx-auto">
-                        <h3 class="ml-5">Añadir Juego</h3>
+                        <h3 class="ml-5">Editar Juego</h3>
                         <?php foreach($errores as $error): ?>
                             <li class="text text-danger mt-2 ml-5"> <?php echo $error ?> </li>
                         <?php endforeach ?>
@@ -174,7 +174,7 @@ if( isset($_POST['añadir']) )
                                     <input name="calificacion" type="text" placeholder="Calificacion" value="<?php echo $calificacion?>">
                                     <span class="icon_star"></span>
                                 </div>
-                                <textarea class="input__item p-3" name="descripcion" id="descripcion" cols="44" rows="10" placeholder="Descripción" value="<?php echo $descripcion?>" style="color: #000030;"></textarea> 
+                                <textarea class="input__item p-3" name="descripcion" id="descripcion" cols="44" rows="6" placeholder="Descripción" style="color: #000030;"><?php echo $descripcion?></textarea> 
                             </div>
                             <div class="">
                                 <div class="input__item">
